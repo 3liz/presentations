@@ -18,6 +18,10 @@
     font-size: 1em;
 }
 
+.slides section {
+    border-radius: 30px;
+}
+
 .slides section.black-font ul{
     color: black;
     background:rgba(255,255,255,0.6);
@@ -59,4 +63,3 @@
     background-color: rgba(255,255,255,0.1);
     border-radius: 5px;
 }
-
