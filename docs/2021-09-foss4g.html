@@ -1,0 +1,425 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>FOSS4G 2021 - Lizmap Web Client</title>
+
+    <link rel="stylesheet" href="static/reset.css">
+    <link rel="stylesheet" href="reveal.js/dist/reveal.css">
+    <link rel="stylesheet" href="reveal.js/dist/theme/black.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="static/monokai.css">
+    <!--3liz style-->
+    <link rel="stylesheet" href="static/3liz.css">
+    <link rel="icon" href="media/logo_lizmap_small.png">
+
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+
+<section data-background-image="media/logo_foss4g2021_circulos.png">
+    <h2>Lizmap Web Client</h2>
+
+    <h3>Create web map applications with QGIS</h3>
+
+    <img src="media/logo_qgis.png" style="height:220px;">
+    <img src="media/logo_lizmap.png" style="height:220px;">
+    <img src="media/logo_3liz.png" style="background-color:white;padding:10px;height:200px;">
+
+    <h4>René-Luc D'Hont - 3liz</h4>
+    <p><a href="https://3liz.com" target="blank">info@3liz.com</a> / <a href="https://twitter.com/3LIZ_news" target="blank">@3liz_NEWS</a></p>
+</section>
+
+<section data-markdown data-background-image="media/logo_foss4g2021_circulos.png">
+## 3liz
+
+* **QGIS** and **PostgreSQL** lovers
+* QGIS **core** contributors (mainly server)
+* 8 employees
+* QGIS / QGIS Server / PostgreSQL / Lizmap
+* **Open Source** forever
+* Development, server hosting, consulting, support, training
+
+![Logo 3liz](media/logo_3liz_small.png)
+
+</section>
+
+<section data-markdown data-background-image="media/logo_foss4g2021_circulos.png">
+## QGIS
+
+* Was a **simple** PostgreSQL/PostGIS **viewer**
+* Licensed under the **GNU General Public License**
+* Project of the **Open Source Geospatial Foundation** (OSGeo)
+* Runs on Linux, Unix, Mac OSX, Windows and Android
+* Supports **numerous** vector, raster, and database **formats** and **functionalities**.
+
+</section>
+
+<section data-markdown data-background-image="media/logo_foss4g2021_circulos.png">
+## QGIS is not only a Desktop app
+
+* **QGIS Server** as an OGC Data Server
+* **QGIS processing** console tool
+* **QField** a mobile [Q]GIS solution
+
+![Logo QGIS](media/logo_qgis.png)
+
+</section>
+
+<section data-markdown data-background-image="media/logo_foss4g2021_circulos.png">
+## Need to publish web maps ?
+
+* You already **use and love QGIS** as your main GIS tool
+* You need to publish **full-featured applications** to the web
+* You have **no time** to set up and configure web maps in **complex admin panels** nor reinventing the wheel
+
+![Lizmap](media/logo_lizmap_small.png)
+</section>
+
+<section data-markdown data-background-image="media/logo_foss4g2021_circulos.png">
+## Lizmap ♥ QGIS
+
+* The **QGIS desktop project** is your **web map configuration**: symbology, printing composers, attribute tables, editing forms, expressions, etc.
+* As **QField**, Prepare once deploy everywhere
+* **Lizmap QGIS plugin**: configure only specific map options (scales, available tools)
+* **Web admin panel** mainly for **authentication and authorization management** (users & groups)
+* It is **open-source**: Mozilla Public Licence
+
+![Lizmap](media/logo_lizmap_small.png)
+</section>
+
+
+<section data-markdown data-background-image="media/logo_foss4g2021_circulos.png">
+## History
+
+* Created in **2011** as simple QGIS project viewer
+* Based on **QGIS Server** and **OGC standards**: WMS, WFS, WMTS, WPS
+* Has evolved to a **full-featured** web gis application generator by integrating many great **QGIS features**: symbology, relations, printing, etc.
+
+![Lizmap](media/logo_lizmap_small.png)
+</section>
+
+<section data-markdown data-background-image="media/logo_foss4g2021_circulos.png">
+## How-to publish a web map application:
+
+* Create and set up your **QGIS project** (e.g. layers and server properties)
+* Use **Lizmap plugin** to configure the map options and tools (extent, scales, ...)
+* **Send** your QGIS project, lizmap configuration, data and others files **to the server**
+
+**\o/** You've got a web map based on this QGIS project **\o/**
+
+</section>
+
+
+<section data-markdown data-background="lightblue" data-background-image="media/logo_foss4g2021_circulos.png">
+
+## Use cases
+
+### Some examples to demonstrate
+### the main features
+
+</section>
+
+<section data-markdown data-background-image="media/logo_foss4g2021_circulos.png">
+## Meylan - map catalog
+
+* French city in the Alps
+* Publish thematic maps for citizens
+* Eye-candy, with a focus on simplicity
+* https://geo.meylan.fr/
+
+</section>
+
+<section data-background="media/use_case_meylan_1.jpg" data-background-size="contain">&nbsp;</section>
+<section data-background="media/use_case_meylan_2.jpg" data-background-size="contain">&nbsp;</section>
+
+<section data-markdown data-background-image="media/logo_foss4g2021_circulos.png">
+## Calvados and Gard- Custom theme
+
+* French departments of Normandy and Occitanie
+* Publish thematic maps for citizens
+* Promoting landscapes and monuments
+* https://atlas.calvados.fr/ and https://sig.gard.fr/
+
+</section>
+
+<section data-background="media/use_case_atlas_calvados.png" data-background-size="contain">&nbsp;</section>
+<section data-background="media/use_case_atlas_gard.png" data-background-size="contain">&nbsp;</section>
+
+<section data-markdown data-background-image="media/logo_foss4g2021_circulos.png">
+## Aduga - Popups
+### Identify an object
+
+* **Urban planning agency**
+* Highlight key figures of **local business parks**
+* Use **Lizmap HTML popup** with QGIS tooltip & expressions
+
+</section>
+
+<section data-background="media/use_case_aduga_1.jpg" data-background-size="contain">&nbsp;</section>
+
+<section data-markdown data-background-image="media/logo_foss4g2021_circulos.png">
+## Edition - Faunal observations
+
+* QGIS field **edit widgets**
+* QGIS Form **drag&drop** conception
+* **Draw** geometry - **GPS** use capabilities to draw
+* Edition **rights**
+
+</section>
+
+<section data-background="media/use_case_edition_1.png" data-background-size="contain">&nbsp;</section>
+<section data-background="media/use_case_edition_2.png" data-background-size="contain">&nbsp;</section>
+<section data-background="media/use_case_edition_3.png" data-background-size="contain">&nbsp;</section>
+<section data-background="media/use_case_edition_4.png" data-background-size="contain">&nbsp;</section>
+
+<section data-markdown data-background-image="media/logo_foss4g2021_circulos.png">
+## Edition - Using QGIS expressions
+
+* Default value
+* Constraints
+* Fields group display rule
+* Drill-down (cascading) forms
+
+</section>
+
+<section data-markdown data-background-image="media/logo_foss4g2021_circulos.png">
+
+![fields group display](media/lizmap_edition_fields_group_display.gif)
+
+</section>
+
+<section data-markdown data-background-image="media/logo_foss4g2021_circulos.png">
+  ## Edition - Extra capabilities
+  
+  * **Geolocation** survey with precision controls
+  * **Snapping**
+  * Geometry toolbar
+  
+</section>
+
+<section data-markdown data-background-image="media/logo_foss4g2021_circulos.png">
+  ## Land Use - Dataviz
+  
+  * **Grand Narbonne**
+  * **Valorization** of Land Use data
+  * **Evolution** of Land Use data
+  * **Crosover** Land Use data
+  
+</section>
+  
+<section data-background="media/use_case_grandnarbonne_occsol1.png" data-background-size="contain">&nbsp;</section>
+<section data-background="media/use_case_grandnarbonne_occsol2.png" data-background-size="contain">&nbsp;</section>
+<section data-background="media/use_case_grandnarbonne_occsol3.png" data-background-size="contain">&nbsp;</section>
+
+<section data-markdown data-background-image="media/logo_foss4g2021_circulos.png">
+## Grand Narbonne - find local products
+
+* Promoting locally sourced
+* Promoting local shops
+* Promoting local products
+* https://lizmap.legrandnarbonne.com/index.php/view/map/?repository=public&project=circuit_court
+
+</section>
+
+<section data-background="media/use_case_grandnarbonne_filter.png" data-background-size="contain">&nbsp;</section>
+
+<section data-markdown data-background-image="media/logo_foss4g2021_circulos.png">
+## Hérault - find places to get digital help
+
+* Promote access to online government and services
+* Promote places that are adapted to the needs
+* Promote local places
+* https://numeriquepourtous.herault.fr/index.php/view/map/?repository=in1&project=CD_34_Inclusin_Num
+
+</section>
+
+<section data-background="media/use_case_herault_filter.png" data-background-size="contain">&nbsp;</section>
+
+<section data-markdown data-background-image="media/logo_foss4g2021_circulos.png">
+## Cadastre - business application
+
+* **French Britanny** group of cities: Centre Morbihan Communauté
+* Search **parcels** by location or owner information
+* Dedicated **Cadastre Lizmap modules** with a **QGIS Server Python plugin**
+* Lizmap native **access control** to protect sensitive data
+
+</section>
+
+<section data-background="media/use_case_cadastre.jpg" data-background-size="contain">&nbsp;</section>
+
+<section data-markdown data-background-image="media/logo_foss4g2021_circulos.png">
+## Address managing module
+
+* **Calvados** - Department of Normandy
+* Support for municipalities
+* **Help to enter** addresses (Lizmap + Postgres)
+* **Export** to French standard (BAL) for national DB
+
+</section>
+
+<section data-background="media/use_case_adresse.png" data-background-size="contain">&nbsp;</section>
+
+<section data-markdown data-background-image="media/logo_foss4g2021_circulos.png">
+## A growing community
+
+* Different types of users
+  * private companies
+  * public organizations
+  * research centers
+* Main contribution in **translation and documentation**
+* JS scripts repository contributions
+* Bug triaging
+
+![French](https://raw.githubusercontent.com/qgis/QGIS/release-2_18/images/flags/fr.png)
+![Galician](https://raw.githubusercontent.com/qgis/QGIS/release-2_18/images/flags/gl.png)
+![Portuguese](https://raw.githubusercontent.com/qgis/QGIS/release-2_18/images/flags/pt_PT.png)
+![Brazilian](https://raw.githubusercontent.com/qgis/QGIS/release-2_18/images/flags/pt_BR.png)
+![Czech](https://raw.githubusercontent.com/qgis/QGIS/release-2_18/images/flags/cs.png)
+![Italian](https://raw.githubusercontent.com/qgis/QGIS/release-2_18/images/flags/it.png)
+![Hungarian](https://raw.githubusercontent.com/qgis/QGIS/release-2_18/images/flags/hu.png)
+![Dutch](https://raw.githubusercontent.com/qgis/QGIS/release-2_18/images/flags/nl.png)
+![Spanish](https://raw.githubusercontent.com/qgis/QGIS/release-2_18/images/flags/es.png)
+![Polish](https://raw.githubusercontent.com/qgis/QGIS/release-2_18/images/flags/pl.png)
+![Finnish](https://raw.githubusercontent.com/qgis/QGIS/release-2_18/images/flags/fi.png)
+![Swedish](https://raw.githubusercontent.com/qgis/QGIS/release-2_18/images/flags/sv.png)
+![Basque](https://raw.githubusercontent.com/qgis/QGIS/release-2_18/images/flags/eu.png)
+![German](https://raw.githubusercontent.com/qgis/QGIS/release-2_18/images/flags/de.png)
+![Russian](https://raw.githubusercontent.com/qgis/QGIS/release-2_18/images/flags/ru.png)
+![Greek](https://raw.githubusercontent.com/qgis/QGIS/release-2_18/images/flags/el.png)
+![Norwegian](https://raw.githubusercontent.com/qgis/QGIS/release-2_18/images/flags/nb.png)
+![Romanian](https://raw.githubusercontent.com/qgis/QGIS/release-2_18/images/flags/ro.png)
+![Turkish](https://raw.githubusercontent.com/qgis/QGIS/release-2_18/images/flags/tr.png)
+![Slovenian](https://raw.githubusercontent.com/qgis/QGIS/release-2_18/images/flags/sl.png)
+
+</section>
+
+
+<section data-background="media/community_transifex.jpg" data-background-size="contain">&nbsp;</section>
+
+<section data-markdown data-background-image="media/logo_foss4g2021_circulos.png">
+## Freely usable and used
+
+* Bonelli eagle 2017-2019 http://lizmap.aigledebonelli.fr/websig/lizmap/www/
+* Indian ocean environment survey http://homisland.seas-oi.org/
+* IRSTEA Earth Observation: https://mdl4eo-cartes.irstea.fr
+* Georice, South-East Asia: http://georice.net/lm/
+* Faunalia (Italie) https://lizmap.faunalia.eu/
+* Consorzio Toscana Nord (Italy) http://geoportale.cbtoscananord.it
+* Live QField users map: http://demo.qfield.org/websig/lizmap/www/
+* Município de Arraiolos (Portugal) http://pdm-revisao.municipioarraiolos.pt/
+* SAERI (South Atlantic): https://data.saeri.org/saeri_webgis/lizmap/www/
+
+</section>
+
+<section data-background="media/use_case_falkland_islands.png" data-background-size="contain">&nbsp;</section>
+
+<section data-markdown data-background-image="media/logo_foss4g2021_circulos.png">
+## Extensibility
+
+* Server sides modules
+* User Javascript scripts
+* CSS themes
+* Map Builder module
+* HTML powered : iframes, video/audio, etc.
+</section>
+
+<section data-background="media/lizmap-javascript-scripts.png" data-background-size="contain">&nbsp;</section>
+<section data-background="media/lizmap-mapbuilder-module.jpg" data-background-size="contain">&nbsp;</section>
+
+<section data-markdown data-background-image="media/logo_foss4g2021_circulos.png">
+## Next Lizmap release : 3.5
+
+* Features
+  * **Reverse** geometry button
+  * **Dynamic** generation of the popup from the QGIS form
+  * **Access control** based on Polygons
+* Under hood :
+  * Refactoring
+  * Tests
+  * Consolidation
+
+</section>
+
+<section data-markdown data-background-image="media/logo_foss4g2021_circulos.png">
+## Lizmap Roadmap
+* Lizmap Web Client **version 4**
+  * Jelix 1.7+
+  * OpenLayers **6+**
+  * **ECMAScript** 6 or 2016+
+  * W3C **Web Components**
+  * **Less dependancies** 
+  * No cool frameworks
+
+</section>
+
+<section data-markdown data-background-image="media/logo_foss4g2021_circulos.png">
+## Lizmap Roadmap
+* From **3.5** to Lizmap Web Client **version 4**
+  * Use OL6+ for **background layers**
+  * Use Jelix 1.7 to provide **significant URLs**
+  * Use OL6+ for **editing**
+  * move **tools** (measure, printing, etc) to OL6+
+  * Others changes
+  * Then **drop** OpenLayers 2
+</section>
+
+<section data-markdown data-background-image="media/logo_foss4g2021_circulos.png">
+# Links
+
+* Demo: https://demo.lizmap.com
+* Website: https://lizmap.com
+* Documentation https://doc.lizmap.com
+* docker-compose https://github.com/3liz/lizmap-docker-compose
+* To contribute
+  * RFC: https://github.com/3liz/lizmap-rfc
+  * web-client https://github.com/3liz/lizmap-web-client
+  * plugin https://github.com/3liz/lizmap-plugin
+  * documentation https://github.com/3liz/lizmap-documentation
+  * localizing https://www.transifex.com/3liz-1/
+
+</section>
+
+<section data-background="media/beluga.jpg">
+<h2>Thank you for your attention</h2>
+
+    <img src="media/logo_qgis.png" style="height:220px;">
+    <img src="media/logo_lizmap.png" style="height:220px;">
+    <img src="media/logo_3liz.png" style="background-color:white;padding:10px;height:200px;">
+<p><a href="https://3liz.com" target="blank">info@3liz.com</a> / <a href="https://twitter.com/3LIZ_news" target="blank">@3liz_NEWS</a></p>
+</section>
+
+<div class="footer" style="z-index:100;">
+    <img src="media/logo_foss4g2021.svg" style="height:70px;"></span>
+</div>
+
+</div>
+</div>
+
+
+
+    <script src="reveal.js/dist/reveal.js"></script>
+    <script src="static/plugin/markdown/marked.js"></script>
+    <script src="static/plugin/markdown/markdown.js"></script>
+    <script src="reveal.js/plugin/notes/notes.js"></script>
+    <script src="reveal.js/plugin/highlight/highlight.js"></script>
+    <script src="static/plugin/zoom-js/zoom.js"></script>
+
+    <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
+        Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+
+                transition: 'slide',
+                plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+        });
+    </script>
+</body>
+</html>
