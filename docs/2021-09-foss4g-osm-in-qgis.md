@@ -57,7 +57,7 @@ Which one should I use ?
 
 ![height:500px](media/about-qgis-screenshot.png)
 
-*OSM vector data, styled like in Google Maps*
+*OSM vector data*
 
 # OpenStreetMap
 
@@ -98,18 +98,19 @@ Another difference ➡ **attributes**
 
 Therefore
 
-OSM data in QGIS will be differrent from raw OSM data
+OSM data in QGIS will be different from raw OSM data
 
 #
 <!-- _class: lead gaia-->
 
-## Moreover, there a are a few questions
+## Moreover, there are a few questions
 
 # Do you need …
 
 * to have up to date OSM data ?
 * to work with small extent or a big extent ?
   * By the way, what small extent and big extent ? (for online API)
+  * Density of data in different part of the worlds
 * to have OSM metadata such as contributor, changeset, timestamp ?
 * data designed for display or analysis or routing or geocoding or … ?
 * all OSM keys and values ?
