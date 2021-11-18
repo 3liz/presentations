@@ -1,0 +1,261 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Plugin Cadastre pour QGIS - Journée technique cadastre/ortho/lidar du CRIGE 2021</title>
+
+    <link rel="stylesheet" href="static/reset.css">
+    <link rel="stylesheet" href="reveal.js/dist/reveal.css">
+    <link rel="stylesheet" href="reveal.js/dist/theme/black.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="static/monokai.css">
+    <!--3liz style-->
+    <link rel="stylesheet" href="static/3liz.css">
+    <link rel="icon" href="media/logo_lizmap_small.png">
+    </head>
+
+    <body>
+
+        <div class="reveal">
+
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+
+                <section>
+                    <h1> L'extension Cadastre pour QGIS</h1>
+
+                    <h2>Intégration et exploitation des données cadastre</h2>
+
+                    <img src="media/Logo_car_blanc.png" style="height:200px;">
+
+                    <h3>René-Luc DHONT - 3liz</h3>
+
+                </section>
+
+                <section data-markdown>
+## Les données cadastrales
+
+* **EDIGEO** : parcellaire graphique
+  - stocké dans des fichiers texte
+  - support de la topologie
+  - format pas très simple
+* **MAJIC** : données de propriété
+  - stocké dans des fichiers texte
+  - mélange d'objets dans un même fichier
+  - pas de CSV mais du positionnel : on compte les caractères
+
+La poule et le couteau...
+
+                </section>
+
+                <section data-background="media/poule.png">
+                &nbsp;</section>
+
+                <section data-markdown data-background="lightblue">
+## Proposer une alternative libre
+
+* Dans QGIS
+* Pour des acteurs variés (accueil en mairie ou SI départemental)
+* Libre et gratuite
+* Fonctions attendues : import des données, affichage, recherche, exports PDF
+* Stockage dans PostgreSQL ou SQLite
+
+![Logo QGIS](media/logo_qgis.png)
+                </section>
+
+
+                <section data-markdown data-background="#6c2e53">
+## Un premier financement multi-partenarial
+
+* Volonté dès le départ de financer en commun
+* et de libérer le plugin pour tous
+* ADUGA + Conseil Régional de Picardie + FEDER + UE
+
+![Logo QGIS](media/cadastre_financeurs.png)
+
+2013 - 3liz en charge du développement
+                </section>
+
+
+                <section data-markdown>
+## Choix techniques
+
+* **MAJIC** : Des scripts d'import issus initialement du projet libre OpenCadastre
+* **EDIGEO** : le support déjà présent dans la librairie GDAL/OGR
+* **Support de PostgreSQL et Spatialite** : un challenge et des compromis
+* **Intégration dans QGIS** : un plugin Python
+
+                </section>
+
+                <section data-markdown data-background="lightblue">
+## Les fonctionnalités
+
+* **Import** : création des tables + import + liens EDIGEO/MAJIC
+* **Visualisation**: outil de chargement avec styles QGIS
+* **Recherche** : Commune / Section / Parcelle / Adresse & Propriétaires
+* **Identification parcellaire** : fenêtre d'information résumée et outils de sélection
+* **Export** : relevés parcellaires et de propriété en PDF via les composeurs d'impression
+
+                </section>
+
+
+                <section>
+                    <video controls src="media/cadastre_chargement.webm" type="video/webm">
+                    </video>
+                </section>
+
+                <section>
+                    <video controls src="media/cadastre_recherche.webm" type="video/webm">
+                    </video>
+                </section>
+
+                <section>
+                    <video controls src="media/cadastre_fiche.webm" type="video/webm">
+                    </video>
+                </section>
+
+
+                <section data-markdown data-background="#6c2e53">
+## Une utilisation par de nombreux acteurs
+
+QGIS permet de démocratiser l'accès à l'outil Cadastre
+* **Acteurs institutionnels** : Ministères, Régions, départements, communautés de communes, communes
+* **Acteurs privés** : Agences d'Urbanisme, Association Syndicales Autorisées, bureaux d'étude, etc.
+
+* Des centaines de **téléchargements** depuis QGIS
+* Une base pour d'**autres outils libres**: Lizmap Web Client, geOrchestra, etc.
+
+
+                </section>
+
+
+                <section data-background="media/cadastre_telechargement.png">
+                </section>
+
+                <section data-markdown>
+## Un modèle économique complexe
+
+* Les premiers financeurs ont aidé à péréniser le plugin:
+  - **ADUGA** : maintenance pour les nouveaux millésimes
+  - **Ville de Megève**: migration vers QGIS 3
+  - **Communauté d'Agglomération du Soissonnais** : amélioration recherche et fiches parcellaires
+  - **Conseil départemental du Gard** : infos sur les subbdivisions et locaux
+
+
+                </section>
+
+                <section data-markdown>
+## Un modèle économique complexe
+
+* Nouveaux contributeurs
+  - **Rennes Metropole** : support des nouveaux millésimes pour Cadastrapp
+* De nouveaux financeurs pour la maintenance 2020:
+    - **Ministère de l'environnement**
+    - **Les ASAs**
+    - **Des Agences d'Urbanismes**
+* Peu de visibilité à moyen terme
+
+                </section>
+
+
+                <section data-markdown data-background="purple">
+## Une communauté encore à construire
+
+* **3liz** porte le projet avec **Rennes Metropole**
+* Des **retours sur des bugs**: dans Github, et beaucoup par email
+* **Peu de contributions** en développement
+* **Communauté d'utilisateurs** peu formalisée
+* Des **contacts encourageants** des utilisateurs
+
+                </section>
+
+                <section data-background="media/cadastre_issues.png">
+                </section>
+
+                <section data-background="media/cadastre_contributeurs.png">
+                </section>
+
+                <section data-markdown data-background="#6c2e53">
+## Une gouvernance à améliorer
+
+* Formaliser une **communauté d'utilisateurs**
+* qui pourrait **centraliser des besoins**
+* et **mutualiser des moyens**
+* pour **orienter les développements**
+* réalisés par des **acteurs multiples**.
+
+Eviter qu'une seule société porte un outil libre très utilisé
+
+                </section>
+
+
+                <section data-markdown data-background="lightblue">
+## initier cette évolution
+
+* **3liz** : mieux informer (Roadmap), modulariser le code (processing), organiser la contribution
+* **QGIS comme modèle de fonctionnement** :
+  - QEP : proposition d'amélioration formalisée,
+  - créer une association en capacité de recevoir des dons,
+  - voter sur les fonctionnalités et l'avenir,
+  - choix transparent des prestataires
+* **Github** pour centraliser la contribution:
+  - formaliser et trier les rapport de bugs,
+  - séparer la documentation
+  - formaliser les versions et la Roadmap
+
+                </section>
+
+                <section data-markdown data-background="purple">
+## En conclusion
+
+* Le cadastre dans QGIS, c'est utile
+* Un outil qui ne pourrait exister sans les autres logiciels libres
+* La pérénité d'un outil libre dépend de sa communauté
+* Libérer du code ne suffit pas -> organiser la contribution
+
+**Vos remarques, critiques et idées sont les bienvenues !**
+
+                </section>
+
+                <section data-markdown>
+                    ## Merci de votre attention
+
+                    ![Logo 3liz](media/Logo_car_blanc.png)
+
+                    https://3liz.com
+                </section>
+
+                <div class="footer">
+                    3liz - journée technique<br>cadastre/ortho/lidar du CRIGE<br>du 18/11/2021
+                </div>
+
+            </div>
+        </div>
+
+        <script src="reveal.js/dist/reveal.js"></script>
+        <script src="static/plugin/markdown/marked.js"></script>
+        <script src="static/plugin/markdown/markdown.js"></script>
+        <script src="reveal.js/plugin/notes/notes.js"></script>
+        <script src="reveal.js/plugin/highlight/highlight.js"></script>
+        <script src="static/plugin/zoom-js/zoom.js"></script>
+
+        <script>
+            // More info about initialization & config:
+            // - https://revealjs.com/initialization/
+            // - https://revealjs.com/config/
+            Reveal.initialize({
+                    controls: true,
+                    progress: true,
+                    history: true,
+                    center: true,
+
+                    transition: 'slide',
+                    plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+            });
+        </script>
+
+
+    </body>
+
+</html>
