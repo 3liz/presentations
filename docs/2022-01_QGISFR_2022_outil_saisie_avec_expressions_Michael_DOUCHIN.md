@@ -339,8 +339,11 @@ with_variable(
 
 # Merci de votre attention
 
-![image](media/qgisfr2022_mdouchin/rotation_par_expression.gif)
+![width:400px](media/qgisfr2022_mdouchin/rotation_par_expression.gif)
+
+* 3Liz: https://3liz.com
+* Twitter 🐦
+  * Michaël DOUCHIN: https://twitter.com/kimaidou
+  * 3Liz: https://twitter.com/3LIZ_news
 
 ![bg right:20% height:100px](media/qgisfr2022_mdouchin/logo_3liz.png)
-
-Michaël DOUCHIN
