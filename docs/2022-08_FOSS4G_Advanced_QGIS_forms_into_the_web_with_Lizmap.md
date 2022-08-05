@@ -20,16 +20,81 @@ style: |
   ul li {
     font-size: 0.9em;
   }
+  img[alt~="top"] {
+      display: inline-block;
+      vertical-align:top;
+      margin-right:10px
+    }
 headingDivider: 1
 ---
 
 
 # Advanced QGIS forms into the web with Lizmap
 
-![width:300](media/qgisfr2022_mdouchin/logo_3liz.png)
+![w:300](media/qgisfr2022_mdouchin/logo_3liz.png)
 
 Nicolas BOISTEAULT - 3LIZ
 
+# Mandatory fields
+
+- Define fields as `NOT NULL` in postgreSQL
+
+![w:400 top](media/foss4g2022_lizmap_advanced_forms/00_QGIS_NOT_NULL.png) ![w:400](media/foss4g2022_lizmap_advanced_forms/00_Lizmap_NOT_NULL.png)
+
+# Alias
+
+- Define aliases for your fields
+
+![w:400 top](media/foss4g2022_lizmap_advanced_forms/01_QGIS_alias.png) ![w:400](media/foss4g2022_lizmap_advanced_forms/01_Lizmap_alias.png)
+
+<!-- 
+- Fields name in database are simple/raw
+- Make the field more comprehensive
+-->
+
+# Organize form's fields
+
+- Use QGIS "Drag and Drop Designer"
+
+![w:800](media/foss4g2022_lizmap_advanced_forms/02_QGIS_dnd_tabs_conf.png)
+
+<!-- 
+- Change field's order
+- Create tabs and group box
+-->
+
+# Tabs
+
+![w:400 top](media/foss4g2022_lizmap_advanced_forms/02_QGIS_dnd_tabs_result.png) ![w:400](media/foss4g2022_lizmap_advanced_forms/02_Lizmap_dnd_tabs.png)
+
+# Group box
+
+![w:400 top](media/foss4g2022_lizmap_advanced_forms/03_QGIS_dnd_groupbox_result.png) ![w:400](media/foss4g2022_lizmap_advanced_forms/03_Lizmap_dnd_groupbox.png)
+
+# Upload files
+
+- Use "Attachment" widget and "Filter" to define allowed extensions
+
+![w:650](media/foss4g2022_lizmap_advanced_forms/04_QGIS_attachment_conf.png)
+
+---
+
+![w:500](media/foss4g2022_lizmap_advanced_forms/04_QGIS_attachment_result.png)
+
+![w:500](media/foss4g2022_lizmap_advanced_forms/04_Lizmap_attachment.png)
+
+---
+- Edit pictures directly in Lizmap
+
+![w:700](media/foss4g2022_lizmap_advanced_forms/04_Lizmap_attachment_crop..gif)
+
+# Constraints with expression
+
+![w:800](media/foss4g2022_lizmap_advanced_forms/05_QGIS_constraint_result.gif)
+
+---
+
+![w:500](media/foss4g2022_lizmap_advanced_forms/05_Lizmap_constraint.gif)
 
 # Thank you for your attention
 
