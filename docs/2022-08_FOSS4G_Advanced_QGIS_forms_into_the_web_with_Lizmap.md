@@ -71,6 +71,15 @@ Nicolas BOISTEAULT - 3LIZ
 
 ![w:400 top](media/foss4g2022_lizmap_advanced_forms/03_QGIS_dnd_groupbox_result.png) ![w:400](media/foss4g2022_lizmap_advanced_forms/03_Lizmap_dnd_groupbox.png)
 
+# Toggle tabs of group box visibility on condition
+
+![w:500 top](media/foss4g2022_lizmap_advanced_forms/06_QGIS_toggle_conf.png)
+![w:500 top](media/foss4g2022_lizmap_advanced_forms/06_QGIS_toggle_conf2.png)
+
+---
+
+![w:400 top](media/foss4g2022_lizmap_advanced_forms/06_QGIS_toggle_result.gif)![w:400 top](media/foss4g2022_lizmap_advanced_forms/06_Lizmap_toggle.gif)
+
 # Upload files
 
 - Use "Attachment" widget and "Filter" to define allowed extensions
@@ -95,6 +104,49 @@ Nicolas BOISTEAULT - 3LIZ
 ---
 
 ![w:500](media/foss4g2022_lizmap_advanced_forms/05_Lizmap_constraint.gif)
+
+# Save login and groups
+
+- @lizmap_user for users, @lizmap_user_groups for groups
+
+![w:600](media/foss4g2022_lizmap_advanced_forms/07_QGIS_login_conf.png)
+
+# Value relation
+
+![w:800](media/foss4g2022_lizmap_advanced_forms/08_QGIS_value_relation_conf.png)
+
+---
+
+![w:350](media/foss4g2022_lizmap_advanced_forms/08_Lizmap_value_relation.gif)
+
+# Use case: suggestion based on previous record
+
+- Get last previous record for every users
+
+```sql
+select DISTINCT ON (login)
+obs.cd_nom, amph.nom_complet, login
+from foss4g.observations obs
+left JOIN foss4g.amphibians_reptiles amph on obs.cd_nom = amph.cd_nom
+ORDER BY login, date_obs DESC
+```
+
+![w:500](media/foss4g2022_lizmap_advanced_forms/09_QGIS_last_observation.png)
+
+---
+
+![w:760](media/foss4g2022_lizmap_advanced_forms/10_QGIS_suggestion_conf1.png)
+
+---
+
+![w:500](media/foss4g2022_lizmap_advanced_forms/10_QGIS_suggestion_conf3.png)
+
+
+![w:800](media/foss4g2022_lizmap_advanced_forms/10_QGIS_suggestion_conf2.png)
+
+# Still here? :) Result
+
+![w:500](media/foss4g2022_lizmap_advanced_forms/10_Lizmap_suggestion.gif)
 
 # Thank you for your attention
 
