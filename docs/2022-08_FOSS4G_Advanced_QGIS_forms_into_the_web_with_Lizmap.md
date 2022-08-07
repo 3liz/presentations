@@ -124,10 +124,10 @@ Nicolas BOISTEAULT - 3LIZ
 - Get last previous record for every users
 
 ```sql
-select DISTINCT ON (login)
+SELECT DISTINCT ON (login)
 obs.cd_nom, amph.nom_complet, login
-from foss4g.observations obs
-left JOIN foss4g.amphibians_reptiles amph on obs.cd_nom = amph.cd_nom
+FROM foss4g.observations obs
+LEFT JOIN foss4g.amphibians_reptiles amph ON obs.cd_nom = amph.cd_nom
 ORDER BY login, date_obs DESC
 ```
 
