@@ -35,22 +35,8 @@ headingDivider: 1
 
 Nicolas BOISTEAULT - 3LIZ
 
-# Mandatory fields
-
-- Define fields as `NOT NULL` in postgreSQL
-
-![w:400 top](media/foss4g2022_lizmap_advanced_forms/00_QGIS_NOT_NULL.png) ![w:400](media/foss4g2022_lizmap_advanced_forms/00_Lizmap_NOT_NULL.png)
-
-# Alias
-
-- Define aliases for your fields
-
-![w:400 top](media/foss4g2022_lizmap_advanced_forms/01_QGIS_alias.png) ![w:400](media/foss4g2022_lizmap_advanced_forms/01_Lizmap_alias.png)
-
-<!-- 
-- Fields name in database are simple/raw
-- Make the field more comprehensive
--->
+<!-- (20s) Hi, I'm going to show you how you can make advanced forms in QGIS which will be easy for users to be filled. This way you'll get more participation and less mistake in your data.
+I also will show you that you'll get those forms in the web thanks to Lizmap with no more configuration most of the time. -->
 
 # Organize form's fields
 
@@ -58,27 +44,39 @@ Nicolas BOISTEAULT - 3LIZ
 
 ![w:800](media/foss4g2022_lizmap_advanced_forms/02_QGIS_dnd_tabs_conf.png)
 
-<!-- 
+<!-- (20s)
+- Decide which fields are to be visible
 - Change field's order
 - Create tabs and group box
 -->
 
-# Tabs
+<!-- # Tabs
 
 ![w:400 top](media/foss4g2022_lizmap_advanced_forms/02_QGIS_dnd_tabs_result.png) ![w:400](media/foss4g2022_lizmap_advanced_forms/02_Lizmap_dnd_tabs.png)
 
 # Group box
 
-![w:400 top](media/foss4g2022_lizmap_advanced_forms/03_QGIS_dnd_groupbox_result.png) ![w:400](media/foss4g2022_lizmap_advanced_forms/03_Lizmap_dnd_groupbox.png)
+![w:400 top](media/foss4g2022_lizmap_advanced_forms/03_QGIS_dnd_groupbox_result.png) ![w:400](media/foss4g2022_lizmap_advanced_forms/03_Lizmap_dnd_groupbox.png) -->
 
-# Toggle tabs of group box visibility on condition
+# Toggle tabs or group box visibility on condition
 
-![w:500 top](media/foss4g2022_lizmap_advanced_forms/06_QGIS_toggle_conf.png)
-![w:500 top](media/foss4g2022_lizmap_advanced_forms/06_QGIS_toggle_conf2.png)
+![w:850](media/foss4g2022_lizmap_advanced_forms/06_QGIS_toggle_conf.png)
+
+<!-- (35s) Let's say we create a form for everybody (AKA crowdsourcing) but also logged in users in Lizmap (like people in our organization).
+Let's say you have a form with many fields but many of them are not mandatory so you don't want to show them all when users open the form to not scare them. If it seems too long to fill it, they might give up and close it.
+Here I've created a boolean field called `has_details`, with `Add details` as an Alias to have a more understandable title for this field and it is defined as a `Checkbox`... -->
+
+---
+
+![w:850](media/foss4g2022_lizmap_advanced_forms/06_QGIS_toggle_conf2.png)
+
+<!-- (15s) ...I also create a `Details` tab thanks to the `Drag and Drop Designer` configured with a `Control Visibility by Expression` to only display it when `has_details` checkbox is checked. -->
 
 ---
 
 ![w:400 top](media/foss4g2022_lizmap_advanced_forms/06_QGIS_toggle_result.gif)![w:400 top](media/foss4g2022_lizmap_advanced_forms/06_Lizmap_toggle.gif)
+
+<!-- (10s) Here is the result. As you can see `Details` tab is only visible when `Add details?` is checked -->
 
 # Upload files
 
@@ -86,9 +84,11 @@ Nicolas BOISTEAULT - 3LIZ
 
 ![w:650](media/foss4g2022_lizmap_advanced_forms/04_QGIS_attachment_conf.png)
 
+<!-- (10s) We want people to upload photos. We create fields defined as `Attachment` with a Filter to only display JPEG and PNG files -->
+
 ---
 
-![w:500](media/foss4g2022_lizmap_advanced_forms/04_QGIS_attachment_result.png)
+![w:550](media/foss4g2022_lizmap_advanced_forms/04_QGIS_attachment_result.png)
 
 ![w:500](media/foss4g2022_lizmap_advanced_forms/04_Lizmap_attachment.png)
 
@@ -97,7 +97,13 @@ Nicolas BOISTEAULT - 3LIZ
 
 ![w:700](media/foss4g2022_lizmap_advanced_forms/04_Lizmap_attachment_crop..gif)
 
+In Lizmap, you can also rotate or crop images. It is more convenient than to have to install a software for that.
+
 # Constraints with expression
+
+![w:800](media/foss4g2022_lizmap_advanced_forms/05_QGIS_constraint_conf.png)
+
+---
 
 ![w:800](media/foss4g2022_lizmap_advanced_forms/05_QGIS_constraint_result.gif)
 
@@ -107,9 +113,13 @@ Nicolas BOISTEAULT - 3LIZ
 
 # Save login and groups
 
-- @lizmap_user for users, @lizmap_user_groups for groups
+- Expression variables: @lizmap_user for users, @lizmap_user_groups for groups
 
 ![w:600](media/foss4g2022_lizmap_advanced_forms/07_QGIS_login_conf.png)
+
+<!-- When contributors are logged in Lizmap we can use their user login or user groups in form's expression.
+Here I have created an invisible `login` field which get filled by the user login when form is saved
+ -->
 
 # Value relation
 
