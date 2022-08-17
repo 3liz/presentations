@@ -15,16 +15,20 @@ style: |
     background: #3182be;
   }
   h1 {
-    font-size: 1.4em;
+    font-size: 1.35em;
   }
   ul li {
     font-size: 0.9em;
   }
   img[alt~="top"] {
-      display: inline-block;
-      vertical-align:top;
-      margin-right:10px
-    }
+    display: inline-block;
+    vertical-align:top;
+    margin-right:10px
+  }
+  img[alt~="center"] {
+    display: block;
+    margin: 0 auto;
+  }
 headingDivider: 1
 ---
 
@@ -44,11 +48,11 @@ This way you'll get more participation and less mistake in your data.
 
 - Use QGIS "Drag and Drop Designer"
 
-![w:800](media/foss4g2022_lizmap_advanced_forms/02_QGIS_dnd_tabs_conf.png)
+![w:850](media/foss4g2022_lizmap_advanced_forms/02_QGIS_dnd_tabs_conf.png)
 
 <!-- (20s)
 First with the QGIS "Drag and Drop Designer" we can:
-- Decide which fields are to be visible 
+- Decide which fields needs to be filled
 - Change the field's order
 - Create tabs and group boxes
 -->
@@ -69,7 +73,7 @@ Here I've created a boolean field called `has_details`, with `Add details` as an
 
 ---
 
-![w:400 top](media/foss4g2022_lizmap_advanced_forms/06_QGIS_toggle_result.gif)![w:400 top](media/foss4g2022_lizmap_advanced_forms/06_Lizmap_toggle.gif)
+![w:450 center](media/foss4g2022_lizmap_advanced_forms/06_Lizmap_toggle.gif)
 
 <!-- (10s) Here is the result. As you can see `Details` tab is only visible when `Add details?` is checked -->
 
@@ -77,13 +81,11 @@ Here I've created a boolean field called `has_details`, with `Add details` as an
 
 - Use "Attachment" widget and "Filter" to define allowed extensions
 
-![w:650](media/foss4g2022_lizmap_advanced_forms/04_QGIS_attachment_conf.png)
+![w:680](media/foss4g2022_lizmap_advanced_forms/04_QGIS_attachment_conf.png)
 
 <!-- (10s) Now we want people to upload photos. We create fields defined with the `Attachment` widget type and with a Filter to only display JPEG and PNG files -->
 
 ---
-
-<!-- ![w:550](media/foss4g2022_lizmap_advanced_forms/04_QGIS_attachment_result.png) -->
 
 ![w:750](media/foss4g2022_lizmap_advanced_forms/04_Lizmap_attachment.png)
 
@@ -92,7 +94,7 @@ Here I've created a boolean field called `has_details`, with `Add details` as an
 ---
 - Edit pictures directly in Lizmap
 
-![w:700](media/foss4g2022_lizmap_advanced_forms/04_Lizmap_attachment_crop..gif)
+![w:750](media/foss4g2022_lizmap_advanced_forms/04_Lizmap_attachment_crop..gif)
 
 <!-- (10s) In Lizmap, you can also rotate or crop images. It is more convenient than to have to install a software for that. -->
 
@@ -104,7 +106,7 @@ Here I've created a boolean field called `has_details`, with `Add details` as an
 
 ---
 
-![w:500](media/foss4g2022_lizmap_advanced_forms/05_Lizmap_constraint.gif)
+![w:500 center](media/foss4g2022_lizmap_advanced_forms/05_Lizmap_constraint.gif)
 
 <!-- (10s) Here you can see the result in Lizmap -->
 
@@ -112,7 +114,7 @@ Here I've created a boolean field called `has_details`, with `Add details` as an
 
 - Expression variables: @lizmap_user for users, @lizmap_user_groups for groups
 
-![w:600](media/foss4g2022_lizmap_advanced_forms/07_QGIS_login_conf.png)
+![w:600 center](media/foss4g2022_lizmap_advanced_forms/07_QGIS_login_conf.png)
 
 <!-- (15s) When contributors are logged in Lizmap, we can use their user login or user groups in form's expressions thanks to expression variables.
 Here I have created an invisible `login` field which get filled with the user login when form is saved.
@@ -120,15 +122,15 @@ Here I have created an invisible `login` field which get filled with the user lo
 
 # Value relation
 
-![w:800](media/foss4g2022_lizmap_advanced_forms/08_QGIS_value_relation_conf.png)
+![w:730](media/foss4g2022_lizmap_advanced_forms/08_QGIS_value_relation_conf.png)
 
 <!-- (5s) The Value Relation widget is very convenient to display a list of value from another layer. -->
 
 ---
 
-![w:350](media/foss4g2022_lizmap_advanced_forms/08_Lizmap_value_relation.gif)
+![w:350 center](media/foss4g2022_lizmap_advanced_forms/08_Lizmap_value_relation.gif)
 
-<!-- (10s) But sometimes the list can be very long. In this example, we display scientific names for amphibians and reptiles in France. It would be more convenient to suggest the last previous record for example -->
+<!-- (10s) But sometimes the list can be very long. In this example, we display scientific names for amphibians and reptiles in France. It would be more convenient to suggest the last previous record on top of the list for example -->
 
 # Use case: suggestion based on previous record
 
@@ -156,23 +158,23 @@ SELECT * FROM (
 ) sub_query ORDER BY id
 ```
 
-<!-- (10s) We create a layer from a view with this SQL query. It is a UNION ALL with the last previous record for logged in users and the whole list -->
+<!-- (10s) We create a layer from a view with this SQL query. It is a UNION ALL with the last previous record for logged in users and the whole list of animals -->
 
 ---
 
-![w:500](media/foss4g2022_lizmap_advanced_forms/09_QGIS_last_observation.png)
+![w:570 center](media/foss4g2022_lizmap_advanced_forms/09_QGIS_last_observation.png)
 
 <!-- (20s) In red, the attribute table shows us the last record for alice, bob and demo users. The rest is the whole list of animals. -->
 
 ---
 
-![w:760](media/foss4g2022_lizmap_advanced_forms/10_QGIS_suggestion_conf1.png)
+![w:740](media/foss4g2022_lizmap_advanced_forms/10_QGIS_suggestion_conf1.png)
 
 <!-- (15s) To only get the previous record for the logged in user in Lizmap we use this `Filter expression` which uses again the `@lizmap_user` expression variable -->
 
 # Still here? :) Result
 
-![w:500](media/foss4g2022_lizmap_advanced_forms/10_Lizmap_suggestion.gif)
+![w:500 center](media/foss4g2022_lizmap_advanced_forms/10_Lizmap_suggestion.gif)
 
 <!-- (15s) As you can see now when a logged in user save a form he then has on top of the scientific name's list the last specie suggested. -->
 
