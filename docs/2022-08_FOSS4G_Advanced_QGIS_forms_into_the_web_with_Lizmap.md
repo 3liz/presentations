@@ -5,7 +5,7 @@ paginate: true
 theme: gaia
 class: invert
 header: '![height:30px](media/qgisfr2022_mdouchin/logo_3liz.png)'
-footer: '![height:30px](media/logo/logo_foss4g2022_firenze.png) FOSS4G 2022'
+footer: '![height:30px](media/events/foss4g-world-2022-square.jpg) FOSS4G 2022'
 size: 4:3
 style: |
   section {
@@ -40,7 +40,7 @@ headingDivider: 1
 Nicolas BOISTEAULT - 3LIZ
 
 <!-- (15s) Hi, I'm going to show you some tips to make advanced forms in QGIS which will be easy for users to be filled.
-I also will show you that you'll get those forms in the web thanks to Lizmap with no more configuration most of the time.
+I also will show you those forms in the web thanks to Lizmap with no more configuration most of the time.
 This way you'll get more participation and less mistake in your data.
  -->
 
@@ -61,15 +61,15 @@ First with the QGIS "Drag and Drop Designer" we can:
 
 ![w:850](media/foss4g2022_lizmap_advanced_forms/06_QGIS_toggle_conf.png)
 
-<!-- (35s) Let's say we create a form for a crowdsourcing campaign but also logged in users in Lizmap (like people in our organization).
-This form will have many fields but many of them are not mandatory so we don't want to show them all when users open the form to not scare them. If it seems too long to fill it, they might give up and close it.
-Here I've created a boolean field called `has_details`, with `Add details` as an Alias to have a more understandable title for this field which is defined as a `Checkbox`... -->
+<!-- (35s) Let's say we create a form for a crowdsourcing campaign but also for logged in users in Lizmap (like people in our organization).
+This form have many fields but many of them are not mandatory so we don't want to show them all because when forms seem too long to fill, some users might give up and close it.
+To avoid that here we create a boolean field called `has_details`, with `Add details` as an Alias to have a more understandable title for this field which is defined as a `Checkbox`... -->
 
 ---
 
-![w:850](media/foss4g2022_lizmap_advanced_forms/06_QGIS_toggle_conf2.png)
+![w:870](media/foss4g2022_lizmap_advanced_forms/06_QGIS_toggle_conf2.png)
 
-<!-- (15s) ...I have also created a `Details` tab thanks to the `Drag and Drop Designer` configured with a `Control Visibility by Expression` to only display it when the `has_details` checkbox is checked. -->
+<!-- (15s) ...we also create a `Details` tab configured with a `Control Visibility by Expression` to only display it when the `has_details` checkbox is checked. -->
 
 ---
 
@@ -89,26 +89,26 @@ Here I've created a boolean field called `has_details`, with `Add details` as an
 
 ![w:750](media/foss4g2022_lizmap_advanced_forms/04_Lizmap_attachment.png)
 
-<!-- (10s) You can see the result in Lizmap. Only files with defined extensions are displayed when selecting them -->
+<!-- (10s) You can see in Lizmap, only files with defined extensions are displayed when selecting them -->
 
 ---
 - Edit pictures directly in Lizmap
 
 ![w:750](media/foss4g2022_lizmap_advanced_forms/04_Lizmap_attachment_crop..gif)
 
-<!-- (10s) In Lizmap, you can also rotate or crop images. It is more convenient than to have to install a software for that. -->
+<!-- (10s) After file selection, you can also rotate or crop images. It is more convenient than to have to install a software for that. -->
 
 # Constraints with expression
 
 ![w:800](media/foss4g2022_lizmap_advanced_forms/05_QGIS_constraint_conf.png)
 
-<!-- (5s) Here we use an expression to constraint a field to have at least thirty characters -->
+<!-- (10s) Here we define a `Multiline` field and use an expression to constraint the field to have at least thirty characters and display an informative message when it is not honored -->
 
 ---
 
-![w:500 center](media/foss4g2022_lizmap_advanced_forms/05_Lizmap_constraint.gif)
+![w:720 center](media/foss4g2022_lizmap_advanced_forms/05_Lizmap_constraint.gif)
 
-<!-- (10s) Here you can see the result in Lizmap -->
+<!-- (10s) In Lizmap, the constraint is visible when hovering the field's name and when not honored on form submission -->
 
 # Save login and groups
 
@@ -117,7 +117,7 @@ Here I've created a boolean field called `has_details`, with `Add details` as an
 ![w:600 center](media/foss4g2022_lizmap_advanced_forms/07_QGIS_login_conf.png)
 
 <!-- (15s) When contributors are logged in Lizmap, we can use their user login or user groups in form's expressions thanks to expression variables.
-Here I have created an invisible `login` field which get filled with the user login when form is saved.
+Here we create an invisible `login` field which get filled with the user login when form is saved.
  -->
 
 # Value relation
@@ -130,7 +130,7 @@ Here I have created an invisible `login` field which get filled with the user lo
 
 ![w:350 center](media/foss4g2022_lizmap_advanced_forms/08_Lizmap_value_relation.gif)
 
-<!-- (10s) But sometimes the list can be very long. In this example, we display scientific names for amphibians and reptiles in France. It would be more convenient to suggest the last previous record on top of the list for example -->
+<!-- (10s) But sometimes the list can be very long. In this example, we display scientific names for amphibians and reptiles in France. To ease selection we could, for example, suggest the last previous record on top of the list for logged in users -->
 
 # Use case: suggestion based on previous record
 
@@ -158,7 +158,7 @@ SELECT * FROM (
 ) sub_query ORDER BY id
 ```
 
-<!-- (10s) We create a layer from a view with this SQL query. It is a UNION ALL with the last previous record for logged in users and the whole list of animals -->
+<!-- (10s) For that, we create a layer from a view with this SQL query. It is a UNION ALL with the last previous record for logged in users and the whole list of animals -->
 
 ---
 
@@ -172,18 +172,18 @@ SELECT * FROM (
 
 <!-- (15s) To only get the previous record for the logged in user in Lizmap we use this `Filter expression` which uses again the `@lizmap_user` expression variable -->
 
-# Still here? :) Result
+# Result 🎉
 
-![w:500 center](media/foss4g2022_lizmap_advanced_forms/10_Lizmap_suggestion.gif)
+![w:720 center](media/foss4g2022_lizmap_advanced_forms/10_Lizmap_suggestion.gif)
 
-<!-- (15s) As you can see now when a logged in user save a form he then has on top of the scientific name's list the last specie suggested. -->
+<!-- (15s) As you can see now when a logged in user saves a form he then has on top of the scientific name's list the last specie suggested. -->
 
 # Thank you for your attention
 
-* 3Liz: https://3liz.com
-* Twitter 🐦
-  * Nicolas BOISTEAULT: https://twitter.com/nboisteault
-  * 3Liz: https://twitter.com/3LIZ_news
+- 3Liz: https://3liz.com
+- Twitter 🐦
+  - Nicolas BOISTEAULT: https://twitter.com/nboisteault
+  - 3Liz: https://twitter.com/3LIZ_news
 
 ![bg right:20% height:100px](media/qgisfr2022_mdouchin/logo_3liz.png)
 
