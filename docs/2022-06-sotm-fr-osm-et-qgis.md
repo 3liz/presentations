@@ -121,7 +121,7 @@ les données OSM dans QGIS ne seront jamais à l'identique que les données OSM 
 
 * Charger un fichier OSM XML ou PBF
   * Grâce à GDAL/OGR en fond
-* Plusieurs sites pour télécharger ces fichiers :
+* Plusieurs sites pour télécharger ces fichiers, à l'échelle mondiale :
   * http://download.openstreetmap.fr/extracts/
   * https://download.geofabrik.de/
   * ...
@@ -147,7 +147,7 @@ pour faire de la sélection, de l'étiquettage ...
 
 # Avec des extensions QGIS
 
-Certaines extensions concernent OSM parmi les 973 extensions disponibles dans le gestionnaire de QGIS 😎
+Certaines extensions concernent OSM parmi les 914 extensions disponibles dans le gestionnaire de QGIS 😎
 
 ![height:400px](media/osm/plugins.png)
 
