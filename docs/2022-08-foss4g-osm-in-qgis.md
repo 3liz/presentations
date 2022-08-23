@@ -5,7 +5,7 @@ paginate: true
 theme: gaia
 class: invert
 header: '![height:30px](media/logo/osm_logo.png) ![height:30px](media/heart.png) ![height:30px](media/logo/qgis_letter.png)'
-footer: '![height:30px](media/events/sotm-world-2022.svg) SOTM - Firenze 2022'
+footer: '![height:30px](media/events/foss4g-world-2022-square.jpg) FOSS4G - Firenze 2022'
 size: 4:3
 style: |
   section {
@@ -204,7 +204,7 @@ In *QuickMapServices*, go in *Settings* ➡ *More services* ➡ *Get contributed
 * Download the data on the fly
 * Making requests to the Overpass API, similar to Overpass-Turbo
   * Server API to retrieve raw OSM data based on queries (OQL)
-* QuickOSM **2.2.1** is **on its way**
+* QuickOSM **2.2.1** was released this weekend, during the SOTM & QGIS Contributor meeting
 * Targeting both 
   * **non OSM contributors**
   * and OSM OverpassAPI **experts**
@@ -383,7 +383,8 @@ Possible to customize the configuration :
 
 * Vector tile support, new in QGIS 3.14 🌟
 * MapTiler / OpenMapTiles https://openmaptiles.org/
-* Presentation from Jiri Komarek and Wladimir Szczerban **yesterday at the SOTM** or at the FOSS4G next week
+* Talk at the **State Of The Map** by Jiri Komarek and Wladimir Szczerban
+* Talk at the **FOSS4G** by Adam Laza yesterday, QGIS MapTiler plugin
 
 # Questions
 
@@ -391,6 +392,10 @@ Possible to customize the configuration :
 
 This was just a *subset* of capabilities.
 There are still other plugins, other ways etc.
+
+<br />
+
+Come to see me if you have any links or other tools
 
 <br />
 
