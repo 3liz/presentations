@@ -26,12 +26,16 @@ You should use the **HTML** version of the presentation. Take the **PDF** versio
   | [PDF](docs/pdf/SOTM-FR-2022-osm-et-qgis.pdf)[PeerTube](https://peertube.openstreetmap.fr/w/vDdaxGfbmKuVdReXyJhexG)
 * [OSM and QGIS, FOSS4G and SOTM 2022 🇬🇧](https://docs.3liz.org/presentations/2022-08-foss4g-osm-in-qgis.html)
   | [PDF](docs/pdf/2022-08-foss4g-osm-in-qgis.pdf)
+* [FOSS4G 2022 Firenze 🇬🇧 - QGIS Server into the wild](https://docs.3liz.org/presentations/2022-08_Foss4G_2022_Firenze_QGIS_Server_into_the_wild.html)
+  | [PDF](docs/pdf/2022-08_Foss4G_2022_Firenze_QGIS_Server_into_the_wild.pdf)
 
 ## PgMetadata
 
 * [FOSS4G 2021 🇬🇧](https://docs.3liz.org/presentations/2021-09-Foss4G-PgMetadata.html)
   | [PDF](docs/pdf/FOSS4G-2021-PgMetadata.pdf)
   | [YouTube](https://www.youtube.com/watch?v=CjZZwKlzYGc)
+* [FOSS4G 2022 Firenze 🇬🇧](https://docs.3liz.org/presentations/2022-08-Foss4G-Firenze-PgMetadata.html)
+  | [PDF](docs/pdf/2022-08-Foss4G-Firenze-PgMetadata.pdf)
 
 ## Cadastre
 
