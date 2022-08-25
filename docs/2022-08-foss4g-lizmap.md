@@ -453,6 +453,7 @@ _August 22nd 2022_
 _under the hood_
 
 * Refactoring
+* Migrating some map components to OpenLayers 7
 * Unit tests
 * End2End tests
 

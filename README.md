@@ -4,6 +4,8 @@ You should use the **HTML** version of the presentation. Take the **PDF** versio
 
 ## Lizmap
 
+* [FOSS4G 2022 🇬🇧](https://docs.3liz.org/presentations/2022-08-foss4g-lizmap.html)
+  | [PDF](docs/pdf/2022-08-foss4g-lizmap.pdf)
 * [FOSS4G 2021 🇬🇧](https://docs.3liz.org/presentations/2021-09-foss4g-lizmap.html)
   | [PDF](docs/pdf/FOSS4G-2021-Lizmap-Web-Client.pdf)
   | [YouTube](https://www.youtube.com/watch?v=NIgFgkyBRts)
