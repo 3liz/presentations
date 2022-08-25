@@ -63,7 +63,7 @@ First with the QGIS "Drag and Drop Designer" we can:
 
 <!-- (35s) Let's say we create a form for a crowdsourcing campaign but also for logged in users in Lizmap (like people in our organization).
 This form have many fields but many of them are not mandatory so we don't want to show them all because when forms seem too long to fill, some users might give up and close it.
-To avoid that here we create a boolean field called `has_details`, with `Add details` as an Alias to have a more understandable title for this field which is defined as a `Checkbox`... -->
+To avoid that here we create a boolean field called `has_details`, with `Add details` as an Alias to have a more understandable title and define it as a `Checkbox`... -->
 
 ---
 
@@ -97,18 +97,6 @@ To avoid that here we create a boolean field called `has_details`, with `Add det
 ![w:750](media/foss4g2022_lizmap_advanced_forms/04_Lizmap_attachment_crop..gif)
 
 <!-- (10s) After file selection, you can also rotate or crop images. It is more convenient than to have to install a software for that. -->
-
-# Constraints with expression
-
-![w:800](media/foss4g2022_lizmap_advanced_forms/05_QGIS_constraint_conf.png)
-
-<!-- (10s) Here we define a `Multiline` field and use an expression to constraint the field to have at least thirty characters and display an informative message when it is not honored -->
-
----
-
-![w:720 center](media/foss4g2022_lizmap_advanced_forms/05_Lizmap_constraint.gif)
-
-<!-- (10s) In Lizmap, the constraint is visible when hovering the field's name and when not honored on form submission -->
 
 # Save login and groups
 
@@ -181,6 +169,9 @@ SELECT * FROM (
 # Thank you for your attention
 
 - 3Liz: https://3liz.com
+- Lizmap Web Client:
+  - Web site: https://www.lizmap.com/en/
+  - Github: https://github.com/3liz/lizmap-web-client
 - Twitter 🐦
   - Nicolas BOISTEAULT: https://twitter.com/nboisteault
   - 3Liz: https://twitter.com/3LIZ_news
