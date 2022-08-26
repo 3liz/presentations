@@ -91,12 +91,11 @@ We might spend a lot of time configuring our project in QGIS Desktop ⏰
 
 * Lizmap Web Client
 * Prepare on QGIS desktop, deploy on Lizmap
-* Github
-Open source : Mozilla Public Licence
+* Github, open source : Mozilla Public Licence
 
-Web administration panel is mainly for authentication and authorization management (users and groups)
+* Web administration panel is **mainly** for authentication and authorization management (users and groups)
 
-All other configurations are done within QGIS desktop
+* All other configurations are done **within QGIS desktop**
 
 # History
 
@@ -139,7 +138,7 @@ Available on https://demo.lizmap.com/, **download** it !
 
 ![height:500px](media/qgis/tweet-qgis-expression-lizmap.gif)
 
-# The power of QGIS Server
+#
 
 <!-- _class: lead gaia-->
 
@@ -237,7 +236,7 @@ https://geo.myelan.fr
 
 <!-- _class: lead gaia-->
 
-Setting up forms in QGIS can be **very** powerful ! 😎
+Setting up forms in QGIS desktop can be **very** powerful !
 
 thanks to many features such as Drag&Drop designer, container, visibility by expression, constrains, widgets...
 
@@ -245,35 +244,31 @@ thanks to many features such as Drag&Drop designer, container, visibility by exp
 
 <!-- _class: lead gaia-->
 
-Support of Drag&Drop designer form, with **tabs** to organize the form **and** the "control visibility by expression"
+Different kind of **native** editing widgets from QGIS **desktop** : date picker, dropdown, text input, checkox...
 
-![w:870](media/foss4g2022_lizmap_advanced_forms/06_QGIS_toggle_conf2.png)
-
-# Layer editing
-
-<!-- _class: lead gaia-->
-
-![w:450 center](media/foss4g2022_lizmap_advanced_forms/06_Lizmap_toggle.gif)
+![w:600](media/use_case_edition_2.png)
 
 # Layer editing
 
 <!-- _class: lead gaia-->
 
-Constraints with expression
+Constraints with a **QGIS** expression
 
 ![w:800](media/foss4g2022_lizmap_advanced_forms/05_QGIS_constraint_conf.png)
 
 # Layer editing
 
+Constraints with a **QGIS** expression
+
 <!-- _class: lead gaia-->
 
-![w:720 center](media/foss4g2022_lizmap_advanced_forms/05_Lizmap_constraint.gif)
+![w:680 center](media/foss4g2022_lizmap_advanced_forms/05_Lizmap_constraint.gif)
 
 # Layer editing - Extra capabilities
 
 <!-- _class: lead gaia-->
 
-* **Geolocation**, GPS accuracy control
+* **Geolocation**, GPS accuracy control for **field** mapping
 * **Snapping** with existing features
 * Geometry toolbar
   * Reverse line geometry etc
@@ -298,7 +293,7 @@ Constraints with expression
 
 # AltiProfil
 
-* Developed by a Lizmap user in the Indian Ocean
+* Developed by a Lizmap user in the Indian Ocean (Arnaud Vandecasteele)
 * https://github.com/arno974/lizmap-altiProfil
 
 ![](media/lizmap/alti-profil.jpeg)
@@ -345,11 +340,11 @@ https://github.com/3liz/lizmap-javascript-scripts
 
 ![bg](media/lizmap-javascript-scripts.png)
 
-# Like a Mapillary viewer
+# Add a Mapillary viewer
 
 <!-- _class: lead gaia-->
 
-_This idea and Javascript code was initiated by a Lizmap user in Italy, and then we also add to develop it_
+_This idea and Javascript code was initiated by a Lizmap user in Italy (Francesco Bursi), and then we also add to develop it_
 
 ![height:500px](media/lizmap/mapillary.gif)
 
@@ -430,7 +425,7 @@ _August 22nd 2022_
 
 # Changelog 3.6
 
-* Improving **again** of **QGIS relations**
+* Further improving of **QGIS relations**
 * Use **display values** instead of **raw values** when using a "Value map", "Value relation", "Relation Reference" widget in some tools
 * **New administration panel** for GIS administrator showing metrics on each QGIS project 👍
 * New **legend option** to display it automatically on startup
@@ -445,6 +440,7 @@ _August 22nd 2022_
 * Dataviz improvements
 * Layer tree improvements
 * Use more and more the QGIS Server Lizmap plugin
+* ...
 
 # Ongoing efforts
 
