@@ -29,12 +29,15 @@ You should use the **HTML** version of the presentation. Take the **PDF** versio
   | [PDF](docs/pdf/FOSS4G-2021-osm-in-qgis.pdf)
   | [YouTube](https://www.youtube.com/watch?v=l95PoHGLrTI)
 
-## QGIS
+## QGIS Desktop
+
+* [QGISFR 2022 🇫🇷 - Outil de saisie avec expressions](https://docs.3liz.org/presentations/2022-01_QGISFR_2022_outil_saisie_avec_expressions_Michael_DOUCHIN.html)
+  | [PDF](docs/pdf/QGISFR-2022-Outil_saisie_avec_expressions.pdf)
+
+## QGIS Server
 
 * [FOSS4G 2022 Firenze 🇬🇧 - QGIS Server into the wild](https://docs.3liz.org/presentations/2022-08_Foss4G_2022_Firenze_QGIS_Server_into_the_wild.html)
   | [PDF](docs/pdf/2022-08_Foss4G_2022_Firenze_QGIS_Server_into_the_wild.pdf)
-* [QGISFR 2022 🇫🇷 - Outil de saisie avec expressions](https://docs.3liz.org/presentations/2022-01_QGISFR_2022_outil_saisie_avec_expressions_Michael_DOUCHIN.html)
-  | [PDF](docs/pdf/QGISFR-2022-Outil_saisie_avec_expressions.pdf)
 
 ## PgMetadata
 
