@@ -115,7 +115,7 @@ Pour éviter cela, nous créons un champ booléen appelé `has_details`, avec `A
 
 <!-- (10s) Voici le résultat. Comme vous pouvez le voir, l'onglet "Détails" n'est visible que lorsque l'option "Ajouter des détails" est cochée. -->
 
-# Uploade de photos
+# Upload de photos
 
 - Utilisez l'outil `Pièce jointe` et le paramètre `Filtre` pour définir les extensions autorisées
 
@@ -210,7 +210,7 @@ SELECT * FROM (
 
 <!-- (15s) Pour obtenir uniquement l'enregistrement précédent de l'utilisateur connecté dans Lizmap, nous utilisons cette expression `Filter` qui utilise à nouveau la variable d'expression `@lizmap_user`. -->
 
-# Resultat 🎉
+# Résultat 🎉
 
 ![w:720 center](media/foss4g2022_lizmap_advanced_forms/10_Lizmap_suggestion.gif)
 
