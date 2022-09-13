@@ -1,0 +1,640 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>GéoDataDays 2022 : Lizmap Web Client</title>
+
+    <link rel="stylesheet" href="static/reset.css">
+    <link rel="stylesheet" href="reveal.js/dist/reveal.css">
+    <link rel="stylesheet" href="reveal.js/dist/theme/black.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="static/monokai.css">
+    <!--3liz style-->
+    <link rel="stylesheet" href="static/3liz.css">
+    <link rel="icon" href="media/logo_lizmap_small.png">
+
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+
+<section data-background-image="media/geodatadays-2022/banner.jpg" style="background: #376ca0;">
+    <h2>Lizmap Web Client</h2>
+
+    <h3>Créer des applications cartographiques Web avec votre QGIS bureautique</h3>
+
+    <img src="media/logo_lizmap.png" style="height:220px;">
+    <img src="media/heart.png" style="height:220px;">
+    <img src="media/logo/qgis_letter.png" style="height:220px;">
+
+    <h4>René-Luc D'Hont - 3liz</h4>
+    <img src="media/logo_3liz_small.png" style="height:80px; float:right; margin-right:20px;">
+    <p><a href="https://3liz.com" target="blank">info@3liz.com</a> / <a href="https://twitter.com/3LIZ_news" target="blank">@3liz_NEWS</a></p>
+
+</section>
+
+<section data-markdown data-background-image="media/geodatadays-2022/banner.jpg" style="background: #376ca0;">
+## 3liz
+
+* **Open Source** forever https://github.com/3liz/
+
+* Contributeurs QGIS **core** (essentiellement serveur)
+
+* QGIS / QGIS Server / PostgreSQL+PostGIS / Lizmap
+
+* Développement, hébergement, formation, conseil, assistance
+
+![Logo 3liz](media/logo_3liz_small.png)
+
+</section>
+
+<section data-markdown data-background-image="media/geodatadays-2022/banner.jpg" style="background: #376ca0;">
+## QGIS Bureautique
+
+Nous pouvons passer beaucoup de temps à configurer notre projet dans QGIS Bureautique. ⏰
+
+* Mise en place de couches et de relations
+* Symbologie et étiquettage des couches
+* Construire des formulaires pour faciliter l'ajout de données
+* Mise en page d'impression PDF
+* ...
+
+![Logo QGIS](media/qgis-icon-small.jpg)
+
+</section>
+
+<section data-markdown data-background-image="media/geodatadays-2022/banner.jpg" style="background: #376ca0;">
+## QGIS Bureautique
+
+![QGIS Network Analysis](media/qgis/network_analysis.png)
+
+</section>
+
+<section data-markdown data-background-image="media/geodatadays-2022/banner.jpg" style="background: #376ca0;">
+## QGIS Bureautique
+
+![QGIS Mesh temporal](media/qgis-mesh-temporal.gif)
+
+</section>
+
+<section data-markdown data-background-image="media/geodatadays-2022/banner.jpg" style="background: #376ca0;">
+## Vous avez besoin de partager votre travail ?
+
+* Vous utilisez et aimez déjà **QGIS**.
+* **Vous y êtes habitués** !
+* Puis vous avez besoin de publier une application complète sur le web ?
+* **Vous ne voulez pas perdre de temps** avec une interface d'administration Web complexes, à re-styliser des couches, des formulaires, etc.
+*
+
+</section>
+
+<section data-markdown data-background-image="media/geodatadays-2022/banner.jpg" style="background: #376ca0;">
+## Il faut savoir que
+
+* QGIS **n'est pas seulement** une application bureautique
+* Mais aussi un serveur SIG 🚀
+* Certification OGC depuis 2018 : WMS, WFS, WMTS...
+* **Rapport de tests récent**: http://test.qgis.org/ogc_cite/ogcapif/latest/report.html
+
+![Logo QGIS](media/qgis-icon-small.jpg)
+
+</section>
+
+<section data-markdown data-background-image="media/geodatadays-2022/banner.jpg" style="background: #376ca0;">
+## Au dessus de QGIS Serveur
+
+* Lizmap Web Client
+* **Préparer sur QGIS bureautique, déployer sur Lizmap**
+* Github, Open Source : Mozilla Public Licence
+* Le panneau d'administration Web sert principalement à la gestion des utilisateurs et des autorisations.
+* Toutes les autres configurations sont effectuées dans QGIS bureautique.
+
+![Logo Lizmap](media/logo_lizmap_small.png)
+
+</section>
+
+<section data-markdown data-background-image="media/geodatadays-2022/banner.jpg" style="background: #376ca0;">
+## Historique Lizmap
+
+* Créé comme un simple **visualiseur web** de projet QGIS
+* Basé sur QGIS Serveur et ses capacités OGC : WMS, WFS, WCS...
+* A évolué pour devenir un générateur d'**applications SIG Web complètes**
+  en intégrant de nombreuses fonctionnalités natives de QGIS : symbologie, relations, impression, formulaires.
+
+![Logo Lizmap](media/logo_lizmap_small.png)
+
+</section>
+
+<section data-markdown data-background-image="media/geodatadays-2022/banner.jpg" style="background: #376ca0;">
+## Comment faire
+
+1. Créer un **projet QGIS** avec quelques couches
+2. Utiliser le **plugin Lizmap** pour configurer certaines options spécifiques au Web (étendue, échelles, outils disponibles).
+3. Et **Déposer** sur le serveur Lizmap
+
+**\o/** Vous avez une carte web basée sur le projet QGIS **\o/**
+
+![Logo Lizmap](media/logo_lizmap_small.png)
+
+</section>
+
+<section data-markdown data-background-image="media/geodatadays-2022/banner.jpg" style="background: #376ca0;">
+## Publier
+
+![Demo Lizmap](media/lizmap/demo.png)
+
+</section>
+
+<section data-markdown data-background-image="media/geodatadays-2022/banner.jpg" style="background: #376ca0;">
+## La force de QGIS Serveur
+
+Quelques jours avant le FOSS4G 2022, dans la timeline 🐦 de [@etrimaille](https://twitter.com/etrimaille) 🤔
+
+![Tweet QGIS Expression](media/qgis/tweet-qgis-expression.gif)
+</section>
+
+<section data-background-image="media/geodatadays-2022/banner.jpg" style="background: #376ca0;">
+  <h2 id="la-force-de-qgis-serveur">La force de QGIS Serveur</h2>
+  <p>Oh, mais... Dans l'Open Source, on <strong>partage</strong> les astuces 🤗</p>
+  <p><img src="media/qgis/tweet-expression-download.png" alt="Tweet QGIS Expression Download" style="height:500px;"></p>
+</section>
+
+<section data-background-image="media/geodatadays-2022/banner.jpg" style="background: #376ca0;">
+  <h2 id="la-force-de-qgis-serveur">La force de QGIS Serveur</h2>
+  <p>A priori, il n'ai rien eu à faire pour que cela fonctionne sur le web 😋 Disponible sur <a href="https://demo.lizmap.com/">https://demo.lizmap.com/</a>, <strong>téléchargez-le</strong> !</p>
+  <p><img src="media/qgis/tweet-qgis-expression-lizmap.gif" alt="Tweet QGIS Expression Lizmap" style="height:500px;"></p>
+</section>
+
+<section data-markdown data-background-image="media/geodatadays-2022/banner.jpg" style="background: #376ca0;">
+## La force de QGIS Serveur
+
+* L'auteur original **n'avait pas prévu** de publier son projet QGIS sur le web au départ.
+* **Mais**, grâce à QGIS Serveur, dont la base de code est la même que celle de QGIS Desktop,
+  99% du travail avait déjà été fait pour le publier et le partager sur le Web.  🚀
+
+![Logo QGIS](media/qgis-icon-small.jpg)
+</section>
+
+<section data-markdown data-background="lightblue" data-background-image="media/geodatadays-2022/banner.jpg" style="background: #376ca0;">
+
+## Cas d'usage
+
+### Quelques exemples pour démontrer les principales caractéristiques
+
+</section>
+
+<section data-markdown data-background-image="media/geodatadays-2022/banner.jpg" style="background: #376ca0;">
+## Meylan - Portail cartographique
+
+* Ville de la Métropole de Grenoble
+* Publier des cartes thématiques pour les citoyens
+* Le plaisir des yeux, dans un souci de simplicité
+* https://geo.meylan.fr/
+
+</section>
+
+<section data-background="media/use_case_meylan_1.jpg" data-background-size="contain">&nbsp;</section>
+<section data-background="media/use_case_meylan_2.jpg" data-background-size="contain">&nbsp;</section>
+
+<section data-markdown data-background-image="media/geodatadays-2022/banner.jpg"  style="background: #376ca0;">
+## Calvados et Gard - Thème personnalisé
+
+* Départment normand et d'occitanie
+* Publier des cartes thématiques pour les citoyens
+* Promotion des paysages et monuments
+* https://atlas.calvados.fr/ et https://sig.gard.fr/
+
+</section>
+
+<section data-background="media/use_case_atlas_calvados.png" data-background-size="contain">&nbsp;</section>
+<section data-background="media/use_case_atlas_gard.png" data-background-size="contain">&nbsp;</section>
+
+<section data-markdown data-background-image="media/geodatadays-2022/banner.jpg"  style="background: #376ca0;">
+## Aduga - Popups
+### Identifié un élément
+
+* **Agence d'urbanisme**
+* Mettre en avant les chiffres clés des **parcs d'activités**
+* Utilisation des **infobulles & expressions** QGIS
+
+</section>
+
+<section data-background="media/use_case_aduga_1.jpg" data-background-size="contain">&nbsp;</section>
+
+
+<section data-markdown data-background-image="media/geodatadays-2022/banner.jpg"  style="background: #376ca0;">
+## Occupation du sol - Dataviz
+
+* GEOCS - **Guadeloupe**
+* **Valorisation** des données d'Occupation du sol
+* **Evolution** des données d'Occupation du sol
+* https://cartophyl.lizmap.com/demo/index.php/view/map/?repository=cartophyl&project=indic_GP
+
+</section>
+
+<section data-background="media/lizmap/dataviz-guadeloupe-2.png" data-background-size="contain">&nbsp;</section>
+<section data-background="media/lizmap/dataviz-guadeloupe-1.png" data-background-size="contain">&nbsp;</section>
+<section data-background="media/lizmap/dataviz-guadeloupe-3.png" data-background-size="contain">&nbsp;</section>
+
+<section data-markdown data-background-image="media/geodatadays-2022/banner.jpg"  style="background: #376ca0;">
+## Borbonica - Dataviz
+
+* **Parc national** de La Réunion
+* Publier un **tableau de bord** sur les données d'observation floristiques et faunistiques
+* Utiliser le module **Lizmap dataviz** avec des vues PostgreSQL
+* https://www.borbonica.re/
+
+</section>
+
+<section data-background="media/use_case_borbonica_1.jpg" data-background-size="contain">&nbsp;</section>
+<section data-background="media/use_case_borbonica_2.jpg" data-background-size="contain">&nbsp;</section>
+
+
+<section data-markdown data-background-image="media/geodatadays-2022/banner.jpg"  style="background: #376ca0;">
+## Edition de couches
+
+La configuration des formulaires dans QGIS bureautique peut être **très** puissante !
+
+Grâce à de nombreuses fonctionnalités telles que :
+
+* la conception par glisser-déposer,
+* la visibilité par expression,
+* les contraintes,
+* les outils d'édition
+* ...
+
+</section>
+
+<section data-background-image="media/geodatadays-2022/banner.jpg"  style="background: #376ca0;">
+  <h2 id="edition-de-couches">Edition de couches</h2>
+  <p>Différents types d'outils d'édition <strong>natifs</strong> de QGIS <strong>Bureautique</strong> : sélecteur de date, liste déroulante, saisie de texte, case à cocher...</p>
+  <p><img src="media/use_case_edition_2.png" alt="Edition de couches" style="height:400px;"></p>
+</section>
+
+<section data-background-image="media/geodatadays-2022/banner.jpg"  style="background: #376ca0;">
+  <h2 id="edition-de-couches">Edition de couches</h2>
+  <p>Contraintes à l'aide d'une <strong>expression</strong> QGIS</p>
+  <p><img src="media/foss4g2022_lizmap_advanced_forms/05_QGIS_constraint_conf.png" alt="QGIS configuration de contraintes" style="width:800px;"></p>
+</section>
+
+<section data-background-image="media/geodatadays-2022/banner.jpg"  style="background: #376ca0;">
+  <h2 id="edition-de-couches">Edition de couches</h2>
+  <p>Contraintes à l'aide d'une <strong>expression</strong> QGIS</p>
+  <p><img src="media/foss4g2022_lizmap_advanced_forms/05_Lizmap_constraint.gif" alt="Contraintes QGIS dans Lizmap" style="width:680px;"></p>
+</section>
+
+<section data-markdown data-background-image="media/geodatadays-2022/banner.jpg"  style="background: #376ca0;">
+## Edition de couches
+
+Utilisation des **expressions** QGIS
+
+* Valeur par défaut
+* Contrainte
+* Règle d'affichage des groupes
+* Listes en cascade
+* Filtrage géographique de listes
+
+</section>
+
+<section data-markdown data-background-image="media/geodatadays-2022/banner.jpg"  style="background: #376ca0;">
+## Edition de couches
+
+![Affichage de groupe par expression](media/foss4g2022_lizmap_advanced_forms/06_Lizmap_toggle.gif)
+
+</section>
+
+<section data-markdown data-background-image="media/geodatadays-2022/banner.jpg"  style="background: #376ca0;">
+## Edition de couches
+
+Capacités complémentaires
+
+* **Géolocalisation**, contrôle de la précision du GPS pour les relevés **terrains**
+* **Accrochages** aux géométries éxistantes
+* Barre d'outils
+  * Inversion de lignes
+  * Réduction d'une surface
+  * Déplacement, Rotation
+  * ...
+
+</section>
+
+<section data-markdown data-background-image="media/geodatadays-2022/banner.jpg"  style="background: #376ca0;">
+## Chats - relations et atlas
+
+* Données publiques **Movebank** sur les positions des **chats domestiques**
+* Montrer **les relations entre les données**
+* Utilisation des **relations QGIS** des propriétés du projet
+* Ajout des **tables d'attributs** dans le plugin Lizmap
+* Itération sur les chats avec l'**outil atlas Lizmap**
+
+![cat](media/schubie.jpg)
+
+</section>
+
+<section data-background="media/use_case_cats_1.jpg" data-background-size="contain">&nbsp;</section>
+<section data-background="media/use_case_cats_2.jpg" data-background-size="contain">&nbsp;</section>
+
+<section data-markdown data-background-image="media/geodatadays-2022/banner.jpg"  style="background: #376ca0;">
+## Grand Narbonne - trouver des produits locaux
+
+* Promouvoir les productions locales
+* Promouvoir les magasins locaux
+* Promouvoir les produits locaux
+* https://lizmap.legrandnarbonne.com/index.php/view/map/?repository=public&project=circuit_court
+
+</section>
+
+<section data-background="media/use_case_grandnarbonne_filter.png" data-background-size="contain">&nbsp;</section>
+
+<section data-markdown data-background-image="media/geodatadays-2022/banner.jpg"  style="background: #376ca0;">
+## Hérault - trouver des lieux d'aide au numérique
+
+* Promouvoir les lieux d’accès à l’administration et aux services en ligne
+* Promouvoir les lieux adapatés aux besoins
+* Promouvoir les lieux de proximité
+* https://numeriquepourtous.herault.fr/index.php/view/map/?repository=in1&project=CD_34_Inclusin_Num
+
+</section>
+
+<section data-background="media/use_case_herault_filter.png" data-background-size="contain">&nbsp;</section>
+
+<section data-markdown data-background="lightblue" data-background-image="media/geodatadays-2022/banner.jpg" style="background: #376ca0;">
+
+## Contrôle des accès
+
+### Différents niveaux de contrôle 🛑
+
+</section>
+
+<section data-markdown data-background-image="media/geodatadays-2022/banner.jpg"  style="background: #376ca0;">
+## Contrôle des accès
+
+* Utilisateurs et groupes (interne, LDAP, SAML)
+* Différents niveaux de filtrage et de contrôle d'accès :
+  * Accès ou non un groupe de projets
+  * Accès ou non à un projet
+  * Accès ou non à une couche de données
+  * Accès ou non aux fonctions d'édition
+  * Filtrage des données en fonction de l'utilisateur (soit par attribut, soit par intersection spatiale).
+</section>
+
+<section data-background-image="media/geodatadays-2022/banner.jpg"  style="background: #376ca0;">
+  <h2 id="contrôle-des-accès">Contrôle des accès</h2>
+  <ul>
+  <li>Spatial filtering, like a <strong>mask layer</strong></li>
+  </ul>
+  <p><img src="media/lizmap/filter-polygon.gif" alt="lizmap filter polygon" style="height:450px;"></p>
+
+</section>
+
+<section data-markdown data-background="lightblue" data-background-image="media/geodatadays-2022/banner.jpg" style="background: #376ca0;">
+
+## Étendre Lizmap
+
+### Avec quelques modules supplémentaires 🌟
+
+</section>
+
+<section data-markdown data-background-image="media/geodatadays-2022/banner.jpg"  style="background: #376ca0;">
+## Module Constructeur de carte
+
+* **UNIMA**
+* Réutilisation de projet comme source de couches
+* Assemblage des couches : ordre, style, transparence
+* Impression rapide
+* Catalogue utilisateur
+
+</section>
+
+<section data-background="media/lizmap-mapbuilder-module.jpg" data-background-size="contain">&nbsp;</section>
+
+<section data-markdown data-background-image="media/geodatadays-2022/banner.jpg"  style="background: #376ca0;">
+## Module Cadastre
+
+* **Centre Morbihan Communauté**
+* **Recherche** de parcelles par identification ou propriétaire
+* Edition de **relevés** parcellaires et de proriété
+* **Infos parcellaires** : Propriétaires, subdivisions, locaux
+
+</section>
+
+<section data-background="media/use_case_cadastre.jpg" data-background-size="contain">&nbsp;</section>
+
+<section data-markdown data-background-image="media/geodatadays-2022/banner.jpg"  style="background: #376ca0;">
+## Module Adresse
+
+* Conseil Départemental du calvados
+* Accompagnement des communes
+* **Aide à la saisie** des adresses (Lizmap + Postgres)
+* Export de **Base Adresse Locale** (BAL) pour la BAN
+
+</section>
+
+<section data-background="media/use_case_adresse.png" data-background-size="contain">&nbsp;</section>
+
+<section data-markdown data-background-image="media/geodatadays-2022/banner.jpg"  style="background: #376ca0;">
+## Module AltiProfil
+
+* Développé par un utilisateur de Lizmap à la Réunion (Arnaud Vandecasteele) https://github.com/arno974/lizmap-altiProfil
+
+![](media/lizmap/alti-profil.jpeg)
+
+</section>
+
+<section data-markdown data-background-image="media/geodatadays-2022/banner.jpg"  style="background: #376ca0;">
+## Module Web Processing Service
+
+* Pour exposer le module traitements de QGIS (certains algorithmes) sur le web
+
+![](media/lizmap/wps-chart.png)
+
+</section>
+
+<section data-markdown data-background="lightblue" data-background-image="media/geodatadays-2022/banner.jpg" style="background: #376ca0;">
+
+## Étendre Lizmap
+
+### Avec du **JavaScript** supplémentaire
+
+https://github.com/3liz/lizmap-javascript-scripts
+
+</section>
+
+<section data-background="media/lizmap-javascript-scripts.png" data-background-size="contain">&nbsp;</section>
+
+<section data-background-image="media/geodatadays-2022/banner.jpg"  style="background: #376ca0;">
+  <h2 id="visualiseur-mapillary">Visualiseur Mapillary</h2>
+  <p>Initié par un utilisateur de Lizmap en <strong>Italie</strong> (Francesco Bursi), et complété sur demande de <strong>Lons-le-Saonier</strong>.</p>
+  <p><img src="media/lizmap/mapillary.gif" alt="" style="height:450px;"></p>
+</section>
+
+<section data-markdown data-background-image="media/geodatadays-2022/banner.jpg"  style="background: #376ca0;">
+## Une communauté en plein essor
+
+* Différents types d'utilisateurs
+  * entreprises privées (éolien, environnement, etc)
+  * organisations publiques (CD, EPCI, AU, etc)
+  * centres de recherche
+* Principale contribution de la communauté **Open Source**
+  * **Traductions**
+  * Des scripts **JavaScript** supplémentaires
+  * Entraide sur la **liste de diffusion Lizmap** et gis.stackexchange.com
+  * Rédaction de la **documentation**
+  * ...
+  *
+
+</section>
+
+<section data-markdown data-background-image="media/geodatadays-2022/banner.jpg"  style="background: #376ca0;">
+## Traductions
+
+* https://www.transifex.com/3liz-1/lizmap-locales/dashboard/
+* 25 langues sur Transifex
+    18 langues ont un taux de traduction supérieur à 70%
+
+🇬🇧 🇨🇿 🇫🇷 🇵🇹 🇯🇵 🇷🇺 🇺🇦 🇮🇹 🇵🇱 🇷🇴 🇩🇪 🇸🇰
+
+🇸🇪 🇧🇷 🇪🇸 🇳🇱 🇭🇺 🇫🇮 🇬🇷 🇳🇴 🇦🇷 🇮🇩 🇸🇮
+
+</section>
+
+<section data-background-image="media/geodatadays-2022/banner.jpg"  style="background: #376ca0;">
+  <h2 id="traductions">Traductions</h2>
+  <p><em>22 août 2022</em></p>
+  <p><img src="media/lizmap/translation-lwc-20220823.png" alt="Traduction Lizmap le 23/08/2022" style="height:500px;"></p>
+</section>
+
+<section data-markdown data-background-image="media/geodatadays-2022/banner.jpg"  style="background: #376ca0;">
+## Librement utilisable et utilisé
+
+* Groundwater mapping **Western cape, South Africa** https://www.groundwaterinfo.africa
+* **Indian ocean** environment survey http://homisland.seas-oi.org/
+* **Switzerland** https://www.wandelderzeit.ch/
+* Faunalia (**Italy**) https://lizmap.faunalia.eu/
+* Consorzio Toscana Nord (**Italy**) http://geoportale.cbtoscananord.it
+* **World** Live QField users map: http://demo.qfield.org/websig/lizmap/www/
+* Município de Arraiolos (**Portugal**) http://pdm-revisao.municipioarraiolos.pt/
+* SAERI (**South Atlantic**): https://data.saeri.org/saeri_webgis/lizmap/www/
+* IRSTEA Earth Observation: https://mdl4eo-cartes.irstea.fr
+* Bonelli eagle 2017-2019 http://lizmap.aigledebonelli.fr/websig/lizmap/www/
+
+
+</section>
+
+<section data-background="media/use_case_falkland_islands.png" data-background-size="contain">&nbsp;</section>
+
+<section data-markdown data-background="lightblue" data-background-image="media/geodatadays-2022/banner.jpg" style="background: #376ca0;">
+
+## Feuille de route des développements
+
+</section>
+
+<section data-markdown data-background-image="media/geodatadays-2022/banner.jpg"  style="background: #376ca0;">
+## La Feuille de route
+
+* La prochaine version **3.6** est en **beta**.
+* La version 3.6.0-beta2 est sortie le mois dernier.
+* L'objectif actuel est de publier la version finale 3.6.0 dans les semaines à venir.
+* Le développement de la **3.7** a déjà **commencé** 🚀
+
+</section>
+
+<section data-markdown data-background-image="media/geodatadays-2022/banner.jpg"  style="background: #376ca0;">
+## Prochaine version : 3.6
+
+* Amélioration des relations **QGIS**.
+* Utilisation de **valeurs d'affichage** au lieu de **valeurs brutes**
+* **Nouveau panneau d'administration** remontant des informations de chaque projet QGIS 👍
+* Nouvelle option **légende** pour l'afficher automatiquement au démarrage.
+* ...
+
+</section>
+
+<section data-markdown data-background-image="media/geodatadays-2022/banner.jpg"  style="background: #376ca0;">
+## Le développement de la 3.7 a déjà commencé
+
+* Amélioration du **Formulaire de filtrage**
+* Amélioration de la **Dataviz**
+* Amélioration de **l'arbre des couches**
+* Utiliser de plus en plus le plugin Lizmap de QGIS Server
+* ...
+
+</section>
+
+<section data-markdown data-background-image="media/geodatadays-2022/banner.jpg"  style="background: #376ca0;">
+
+## Efforts continus
+
+### sous le capot
+
+* Amélioration du code
+* Migration de certains composants cartographiques vers **OpenLayers 7**
+* Tests unitaires
+* Tests **End2End**
+
+</section>
+
+<section data-markdown data-background-image="media/geodatadays-2022/banner.jpg"  style="background: #376ca0;">
+## End2end
+
+![end2end](media/lizmap/end2end.gif)
+</section>
+
+<section data-markdown data-background-image="media/geodatadays-2022/banner.jpg"  style="background: #376ca0;">
+# Liens
+
+* Demo: https://demo.lizmap.com
+* Site web: https://lizmap.com
+* Documentation https://docs.lizmap.com
+* docker-compose https://github.com/3liz/lizmap-docker-compose
+* Pour contribuer
+  * RFC https://github.com/3liz/lizmap-rfc
+  * web-client https://github.com/3liz/lizmap-web-client
+  * plugin https://github.com/3liz/lizmap-plugin
+  * documentation https://github.com/3liz/lizmap-documentation
+  * traduction https://www.transifex.com/3liz-1/
+
+</section>
+
+<section data-background="media/fond_carte_lizmap.jpg">
+<h2 style="color:white;">Merci de votre attention</h2>
+
+    <img src="media/logo_qgis.png" style="height:220px;">
+    <img src="media/logo_lizmap.png" style="height:220px;">
+    <img src="media/logo_3liz.png" style="background-color:white;padding:10px;height:200px;">
+<p><a href="https://3liz.com" target="blank" style="color:white;">info@3liz.com</a> / <a href="https://twitter.com/3LIZ_news" target="blank" style="color:white;">@3liz_NEWS</a></p>
+</section>
+
+<div class="footer" style="z-index:100;">
+    <img src="media/geodatadays-2022/logo.png" style="height:70px;"></span>
+</div>
+
+</div>
+</div>
+
+
+
+    <script src="reveal.js/dist/reveal.js"></script>
+    <script src="static/plugin/markdown/marked.js"></script>
+    <script src="static/plugin/markdown/markdown.js"></script>
+    <script src="reveal.js/plugin/notes/notes.js"></script>
+    <script src="reveal.js/plugin/highlight/highlight.js"></script>
+    <script src="static/plugin/zoom-js/zoom.js"></script>
+
+    <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
+        Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+
+                transition: 'slide',
+                plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+        });
+    </script>
+</body>
+</html>
