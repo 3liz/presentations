@@ -115,7 +115,7 @@ Pour éviter cela, nous créons un champ booléen appelé `has_details`, avec `A
 
 <!-- (10s) Voici le résultat. Comme vous pouvez le voir, l'onglet "Détails" n'est visible que lorsque l'option "Ajouter des détails" est cochée. -->
 
-# Upload de photos
+# Déposer des photos
 
 - Utilisez l'outil `Pièce jointe` et le paramètre `Filtre` pour définir les extensions autorisées
 
