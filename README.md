@@ -3,6 +3,9 @@
 You should use the **HTML** version of the presentation. Take the **PDF** version only when needed.
 
 ## Lizmap
+
+* [QGISFR 2023 QGIS QFIELD LIZMAP en Martinique 🇬🇧](https://docs.3liz.org/presentations/2023-03-13_QGISFR_2023_SI_naturaliste_Martinique.html)
+  | [PDF](docs/pdf/2023-03-13_QGISFR_2023_SI_naturaliste_Martinique.pdf)
 * [GéoDataDays 2022 Général 🇫🇷](https://docs.3liz.org/presentations/2022-09-geodatadays-lizmap.html)
 * [GéoDataDays 2022 Formulaire avancé 🇫🇷](https://docs.3liz.org/presentations/2022-09-geodatadays-formulaire-qgis-lizmap.html)
   | [PDF](docs/pdf/2022-09-geodatadays-formulaire-qgis-lizmap.pdf)
