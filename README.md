@@ -2,6 +2,12 @@
 
 You should use the **HTML** version of the presentation. Take the **PDF** version only when needed.
 
+<!-- 
+WHEN YOU EDIT THIS FILE,
+YOU MUST EDIT AS WELL THE FILE ON THE REPOSITORY 3liz.github.io
+OTHERWISE, IT WON'T BE PUBLISHED
+-->
+
 ## Lizmap
 
 * [QGISFR 2023 QGIS QFIELD LIZMAP en Martinique 🇬🇧](https://docs.3liz.org/presentations/2023-03-13_QGISFR_2023_SI_naturaliste_Martinique.html)
