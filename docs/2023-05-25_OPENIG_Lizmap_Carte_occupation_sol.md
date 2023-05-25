@@ -154,7 +154,7 @@ Utilisation de l'algorithme **Intersection** de ![height:40](media/logo/qgis_log
 
 # Merci de votre attention !
 
-*Vos questions sont les bienvenues !*
-**Web** : https://lizmap.com* - **Twitter** : @LizmapForQGIS
+**Web** : https://lizmap.com - **Twitter** ![width:50px](media/openig_2023_lizmap/logo_lizmap_small.png) @LizmapForQGIS
+
 
 ![height:550px](media/openig_2023_lizmap/fond_ccl.png)
