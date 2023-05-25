@@ -2,7 +2,7 @@
 
 You should use the **HTML** version of the presentation. Take the **PDF** version only when needed.
 
-<!-- 
+<!--
 WHEN YOU EDIT THIS FILE,
 YOU MUST EDIT AS WELL THE FILE ON THE REPOSITORY 3liz.github.io
 OTHERWISE, IT WON'T BE PUBLISHED
@@ -12,6 +12,8 @@ Please do not publish/commit files with an underscore in their names. Use dash. 
 
 ## Lizmap
 
+* [OPENIG 2023 Publier une carte d'occupation du sol avec Lizmap 🇫🇷](https://docs.3liz.org/presentations/2023-05-25_OPENIG_Lizmap_Carte_occupation_sol.html)
+  | [PDF](docs/pdf/2023-05-25_OPENIG_Lizmap_Carte_occupation_sol.pdf)
 * [QGISFR 2023 QGIS QFIELD LIZMAP en Martinique 🇬🇧](https://docs.3liz.org/presentations/2023-03-13_QGISFR_2023_SI_naturaliste_Martinique.html)
   | [PDF](docs/pdf/2023-03-13_QGISFR_2023_SI_naturaliste_Martinique.pdf)
 * [GéoDataDays 2022 Général 🇫🇷](https://docs.3liz.org/presentations/2022-09-geodatadays-lizmap.html)
