@@ -6,8 +6,6 @@ You should use the **HTML** version of the presentation. Take the **PDF** versio
 WHEN YOU EDIT THIS FILE,
 YOU MUST EDIT AS WELL THE FILE ON THE REPOSITORY 3liz.github.io
 OTHERWISE, IT WON'T BE PUBLISHED
-
-Please do not publish/commit files with an underscore in their names. Use dash. See the CONTRIBUTING.md
 -->
 
 ## Lizmap
