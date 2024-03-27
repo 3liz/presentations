@@ -52,6 +52,11 @@ OTHERWISE, IT WON'T BE PUBLISHED
 * [FOSS4G 2022 Firenze 🇬🇧 - QGIS Server into the wild](https://docs.3liz.org/presentations/2022-08_Foss4G_2022_Firenze_QGIS_Server_into_the_wild.html)
   | [PDF](docs/pdf/2022-08_Foss4G_2022_Firenze_QGIS_Server_into_the_wild.pdf)
 
+## QField & QFieldCloud
+
+[QGISFR 2024 🇫🇷 - QFieldCloud auto-hébergé](https://docs.3liz.org/presentations/2024-03-28_QGISFR_retour_experience_qfieldcloud_heberge.html)
+  | [PDF](docs/pdf/2024-03-28_QGISFR_retour_experience_qfieldcloud_heberge.pdf)
+
 ## PgMetadata
 
 * [FOSS4G 2022 Firenze 🇬🇧](https://docs.3liz.org/presentations/2022-08-Foss4G-Firenze-PgMetadata.html)
