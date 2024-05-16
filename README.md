@@ -12,7 +12,7 @@ OTHERWISE, IT WON'T BE PUBLISHED
 
 * [OPENIG 2023 Publier une carte d'occupation du sol avec Lizmap 🇫🇷](https://docs.3liz.org/presentations/2023-05-25_OPENIG_Lizmap_Carte_occupation_sol.html)
   | [PDF](docs/pdf/2023-05-25_OPENIG_Lizmap_Carte_occupation_sol.pdf)
-* [QGISFR 2023 QGIS QFIELD LIZMAP en Martinique 🇬🇧](https://docs.3liz.org/presentations/2023-03-13_QGISFR_2023_SI_naturaliste_Martinique.html)
+* [QGISFR 2023 QGIS QFIELD LIZMAP en Martinique 🇫🇷](https://docs.3liz.org/presentations/2023-03-13_QGISFR_2023_SI_naturaliste_Martinique.html)
   | [PDF](docs/pdf/2023-03-13_QGISFR_2023_SI_naturaliste_Martinique.pdf)
 * [GéoDataDays 2022 Général 🇫🇷](https://docs.3liz.org/presentations/2022-09-geodatadays-lizmap.html)
 * [GéoDataDays 2022 Formulaire avancé 🇫🇷](https://docs.3liz.org/presentations/2022-09-geodatadays-formulaire-qgis-lizmap.html)
@@ -44,6 +44,8 @@ OTHERWISE, IT WON'T BE PUBLISHED
 
 ## QGIS Desktop
 
+* [QGISFR 2024 Utilisation des “actions QGIS” pour la gestion des données Véloroutes et Voies Vertes 🇫🇷](https://docs.3liz.org/presentations/2024-03-28_QGISFR_2024_Actions.html)
+  | [PDF](docs/pdf/2024-03-28_QGISFR_2024_Actions.pdf)
 * [QGISFR 2022 🇫🇷 - Outil de saisie avec expressions](https://docs.3liz.org/presentations/2022-01_QGISFR_2022_outil_saisie_avec_expressions_Michael_DOUCHIN.html)
   | [PDF](docs/pdf/QGISFR-2022-Outil_saisie_avec_expressions.pdf)
 
