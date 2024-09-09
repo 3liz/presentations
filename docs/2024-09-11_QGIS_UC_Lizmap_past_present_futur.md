@@ -59,9 +59,9 @@ The QGIS ecosystem gathers:
   * **extensible** with **JavaScript** or **Modules**
 * **MATURE** 12 years of active development in QGIS Server & Lizmap Web Client
 
-# QGIS & Lizmap
+# QGIS & Lizmap Web Client
 
-![bg](media/lizmap/demo.png)
+![height:500](media/qgis-lizmap-side-by-side.png)
 
 
 # Lizmap Web Client - some key features
