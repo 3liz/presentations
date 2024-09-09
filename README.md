@@ -62,6 +62,8 @@ OTHERWISE, IT WON'T BE PUBLISHED
 
 ## PgMetadata
 
+* [QGIS UC 2024 Bratislava 🇬🇧](https://docs.3liz.org/presentations/2024-09-QGIS-UC-Bratislava-PgMetadata.html)
+  | [PDF](docs/pdf/2024-09-QGIS-UC-Bratislava-PgMetadata.pdf)
 * [FOSS4G 2022 Firenze 🇬🇧](https://docs.3liz.org/presentations/2022-08-Foss4G-Firenze-PgMetadata.html)
   | [PDF](docs/pdf/2022-08-Foss4G-Firenze-PgMetadata.pdf)
 * [FOSS4G 2021 🇬🇧](https://docs.3liz.org/presentations/2021-09-Foss4G-PgMetadata.html)
