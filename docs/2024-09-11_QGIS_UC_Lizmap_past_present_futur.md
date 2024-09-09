@@ -205,7 +205,7 @@ Let's focus on 3 modules:
 * **Results** are displayed whenever the algs ends (asynchronous run)
 * **Download** produced outputs (layers, reports, etc.)
 
-![height:500](media/lizmap/wps-chart.png)
+![height:500](media/wps-panel.png)
 
 # The Future of Lizmap
 
