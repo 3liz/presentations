@@ -20,6 +20,7 @@ style: |
   ul li {
     font-size: 0.9em;
   }
+
 headingDivider: 1
 ---
 
@@ -37,14 +38,18 @@ Etienne TRIMAILLE // Michaël DOUCHIN
 # ![height:27](media/qgis-icon-small.png) GIS ecosystem
 
 The QGIS ecosystem gathers:
-- 🚀 A GIS Server  > **QGIS Server**
+
 - 📱 Mobile applications >  **QField** & **Mergin**
 - ⚙ A processing engine  to run algs > **QGIS Processing**
+- 🚀 A GIS Server  > **QGIS Server**
 
-**Lizmap Web Client uses the power of QGIS Server to bring map to your browser**
-
+QGIS Server
 - **Extensible** with Python plugins
 - **Additional requests**: GetPrint, GetLegendGraphics as JSON, etc
+
+**Lizmap Web Client uses the power of QGIS Server to bring maps in your browser**
+
+![height:130](media/logo_lizmap_small.png)
 
 # ![height:70](media/logo_lizmap_small.png) Lizmap Web Client
 
@@ -191,7 +196,6 @@ Lizmap features can be extended with modules for dedicated use cases
 - Based on the amazing **PgRouting extension** for PostgreSQL
 - The module adds **routing tools** which help the user to find its way
 - The routing graph is **based on your data**, not on a online API
-- Doc: https://docs.3liz.org/lizmap-pgrouting-module/
 
 ![height:400](media/qgisuc_2024_bratislava_lizmap/pg_routing.gif)
 
