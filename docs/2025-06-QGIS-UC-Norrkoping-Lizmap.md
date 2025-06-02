@@ -120,6 +120,8 @@ _and for plugins as well, the user must do them from time to time_
 
 # 2024 - Lizmap 3.8 key features
 
+and some 3.9 features as well
+
 ![height:200](media/logo_lizmap_small.png)
 
 <!-- _class: lead gaia-->
@@ -175,10 +177,10 @@ Very useful when you have a **relation between a parent layer** (ex: roads) and 
 
 # Quick overview Lizmap 3.9
 
-- Drawing : Circular geometry measurement on draw, contribution Faunalia
+- Drawing : Circular geometry measurement on draw, contribution from Faunalia
 - Import and export drawing with FlatGeobuf
 - Under the hood
-  - reading of the QGIS project under the hood
+  - performance about reading the QGIS project
   - Eslint, Styleline, Rector : code analysis and linting tools
   - Ongoing work to improve JavaScript documentation with OpenLayers etc
   - API documentation https://docs.3liz.org/lizmap-web-client/
