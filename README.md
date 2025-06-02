@@ -10,6 +10,7 @@ OTHERWISE, IT WON'T BE PUBLISHED
 
 ## Lizmap
 
+* [QGIS UC 2025 Norrköping 🇬🇧](https://docs.3liz.org/presentations/2025-06-QGIS-UC-Norrkoping-Lizmap.html)
 * [QGIS UC 2024 Bratislava 🇬🇧](https://docs.3liz.org/presentations/2024-09-11_QGIS_UC_Lizmap_past_present_futur)
 * [OPENIG 2024 Lizmap et l'aide à l'optimisation d'un projet QGIS pour le Web 🇫🇷](https://docs.3liz.org/presentations/2024-03-26_JP-OPENIG-lizmap-optim.html)
 * [OPENIG 2023 Publier une carte d'occupation du sol avec Lizmap 🇫🇷](https://docs.3liz.org/presentations/2023-05-25_OPENIG_Lizmap_Carte_occupation_sol.html)
