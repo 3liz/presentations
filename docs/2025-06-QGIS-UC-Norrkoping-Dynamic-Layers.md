@@ -84,6 +84,10 @@ QGIS project for a given farm :
 2. How to report one change in the "main" QGIS project and to distribute a new version ?
 3. Pan and zoom the map in these different projects
 
+![height:300](media/illustration/water-norrkoping.jpg)
+
+_In a street of Norrköping_
+
 # Dynamic Layers plugin
 
 ![height:100](media/logo/dynamic_layers.png)
