@@ -62,6 +62,10 @@ OTHERWISE, IT WON'T BE PUBLISHED
 [QGISFR 2024 🇫🇷 - QFieldCloud auto-hébergé](https://docs.3liz.org/presentations/2024-03-28_QGISFR_retour_experience_qfieldcloud_heberge.html)
   | [PDF](docs/pdf/2024-03-28_QGISFR_retour_experience_qfieldcloud_heberge.pdf)
 
+## Dynamic layers
+
+* [QGIS UC 2025 Norrköping 🇬🇧](https://docs.3liz.org/presentations/2025-06-QGIS-UC-Norrkoping-Dynamic-Layers.html)
+
 ## PgMetadata
 
 * [QGIS UC 2024 Bratislava 🇬🇧](https://docs.3liz.org/presentations/2024-09-QGIS-UC-Bratislava-PgMetadata.html)
