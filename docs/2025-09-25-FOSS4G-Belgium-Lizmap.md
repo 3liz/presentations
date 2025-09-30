@@ -40,7 +40,7 @@ Nicolas Boisteault
 * French company
 * **Open Source** forever, check our GitHub https://github.com/3liz/ 
 * Core contributors in QGIS, server side mainly
-* PyQGIS development, Lizmap server hosting (SAAS), trainings about PyQGIS, PostGIS, Lizmap...
+* PyQGIS development, Lizmap development, Lizmap hosting (SAAS), support, trainings about PyQGIS, PostGIS, Lizmap...
 
 ![bg drop-shadow contain right:30%](media/logo_3liz.png)
 
@@ -87,10 +87,7 @@ We sometimes spend a lot of time configuring our project in QGIS Desktop ⏰
 
 * Lizmap Web Client
 * Prepare on QGIS desktop, deploy on Lizmap
-* Github, open source : Mozilla Public Licence
-
 * Web administration panel is **mainly** for authentication and authorization management (users and groups)
-
 * All other configurations are done **within QGIS desktop**
 
 # How to
@@ -340,6 +337,7 @@ https://github.com/3liz/lizmap-javascript-scripts
 
 # Want to try Lizmap?
 Ask us!
+Test our Lizmap hosting one month for free.
 
 ## 👇
 
