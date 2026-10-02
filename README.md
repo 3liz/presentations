@@ -47,6 +47,11 @@ OTHERWISE, IT WON'T BE PUBLISHED
   | [PDF](docs/pdf/FOSS4G-2021-osm-in-qgis.pdf)
   | [YouTube](https://www.youtube.com/watch?v=l95PoHGLrTI)
 
+## QFieldCloud
+
+* [QGIS-FR 2024 🇫🇷 - QFieldCloud auto-hébergé](https://docs.3liz.org/presentations/2024-03-28_QGISFR_retour_experience_qfieldcloud_heberge.html)
+  | [YouTube](https://www.youtube.com/watch?v=NISp36T8A7c)
+
 ## QGIS Desktop
 
 * [QGISFR 2024 🇫🇷 - Utilisation des “actions QGIS” pour la gestion des données Véloroutes et Voies Vertes](https://docs.3liz.org/presentations/2024-03-28_QGISFR_2024_Actions.html)
@@ -56,6 +61,8 @@ OTHERWISE, IT WON'T BE PUBLISHED
 
 ## QGIS Server
 
+* Py-QGIS-Server2 🇬🇧 - QGIS Server ready for the cloud
+  | [YouTube](https://www.youtube.com/watch?v=MtjxRIll4zs)
 * [FOSS4G 2022 Firenze 🇬🇧 - QGIS Server into the wild](https://docs.3liz.org/presentations/2022-08_Foss4G_2022_Firenze_QGIS_Server_into_the_wild.html)
   | [PDF](docs/pdf/2022-08_Foss4G_2022_Firenze_QGIS_Server_into_the_wild.pdf)
 
@@ -77,11 +84,17 @@ OTHERWISE, IT WON'T BE PUBLISHED
 * [FOSS4G 2021 🇬🇧](https://docs.3liz.org/presentations/2021-09-Foss4G-PgMetadata.html)
   | [PDF](docs/pdf/FOSS4G-2021-PgMetadata.pdf)
   | [YouTube](https://www.youtube.com/watch?v=CjZZwKlzYGc)
+* QGIS-FR 2020 🇫🇷 [YouTube](https://www.youtube.com/watch?v=o47w7zf40nw)
 
 ## RoadNetwork
 
 * [QGIS UC 2026 Laax 🇬🇧](https://docs.3liz.org/presentations/2026-10-06_RoadNetwork-Plugin_QGIS_UC_Laax.html)
   | [PDF](docs/pdf/2026-10-06_RoadNetwork-Plugin_QGIS_UC_Laax.pdf)
+
+## Véloroutes et Voies Vertes
+
+* QGIS-FR 2024 🇫🇷 - QGIS et les actions
+  | [YouTube](https://www.youtube.com/watch?v=h2QBeU2XKBQ)
 
 ## Cadastre
 
