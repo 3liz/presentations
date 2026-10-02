@@ -4,7 +4,7 @@ theme: gaia
 paginate: true
 class: invert
 header: '![height:40px](media/logo_3liz.png)'
-footer: 'QGIS UC 2026 - QGIS Server ready for the cloud'
+footer: '![height:30px](media/events/qgis-uc-2026-laax.webp) QGIS UC 2026 - QGIS Server ready for the cloud'
 style: |
     section > header > img {
         float: right;
@@ -148,7 +148,7 @@ https://github.com/3liz/qjazz
 ---
 # QJazz services
 
-- OCG OWS services (WMS, WFS, ...) - OGIS server native services
+- OGC OWS services (WMS, WFS, ...) - OGIS server native services
 - STAC catalogs view of Projects and layers
 - OGC API Maps - https://ogcapi.ogc.org/maps/
 - OGC API Processes - QGIS Processing as a service
@@ -165,7 +165,7 @@ Need change our point of view about projects.
 
 ## From a 'project as resource' perspective
 
-- Consider Project as an application
+- Consider Project as an **application**
 - Corollary: QGIS server is an application server
 - Control what is published (from a customer perspective)
 - Keep some level of flexibility (dynamic caching)
@@ -223,6 +223,23 @@ there is obviously no a single strategy
 -->
 
  ![sssmaller height:250px](media/cat.jpg) ![sssmaller height:250px](media/schubie.jpg) ![sssmaller height:250px](media/rocky.jpg) ![sssmaller height:250px](media/hemingway.jpg)
+
+---
+
+# Lastest news
+
+![bg invert:100%](media/fond_carte_lizmap.jpg)
+
+## Production ready
+
+Deployment with QGIS Server 3.44 on our hosting service
+
+## YAPT-manager integrated as a worker
+
+To easily install plugins in QGIS Server context
+
+
+![ssmaller height:250px center](media/Lizmap_cloud_coul.svg)
 
 ---
 <!-- _class: invert centertitle -->
