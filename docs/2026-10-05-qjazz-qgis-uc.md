@@ -137,7 +137,7 @@ https://github.com/3liz/qjazz
 
 ![bg right:50%](media/qjazz-foss4g-be-2025/mathboard.webp)
 
-![ssmaller left](media/rust-cuddlyferris.svg)
+![ssmaller left height:250px](media/rust-cuddlyferris.svg)
 
 ---
 
