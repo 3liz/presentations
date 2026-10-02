@@ -76,6 +76,11 @@ OTHERWISE, IT WON'T BE PUBLISHED
 [QGISFR 2024 🇫🇷 - QFieldCloud auto-hébergé](https://docs.3liz.org/presentations/2024-03-28_QGISFR_retour_experience_qfieldcloud_heberge.html)
   | [PDF](docs/pdf/2024-03-28_QGISFR_retour_experience_qfieldcloud_heberge.pdf)
 
+## YAPT - Yet Another Plugin Tool
+
+* [QGIS UC 2026 Laax 🇬🇧 - YAPT - Yet Another Plugin Tool](https://docs.3liz.org/presentations/2026-10-05-yapt-qgis-uc.html)
+  | [PDF](docs/pdf/2026-10-05-yapt-qgis-uc.pdf)
+
 ## Dynamic layers
 
 * [QGIS UC 2025 Norrköping 🇬🇧](https://docs.3liz.org/presentations/2025-06-QGIS-UC-Norrkoping-Dynamic-Layers.html)
