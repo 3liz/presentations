@@ -61,7 +61,12 @@ OTHERWISE, IT WON'T BE PUBLISHED
 
 ## QGIS Server
 
-* Py-QGIS-Server2 🇬🇧 - QGIS Server ready for the cloud
+* [QGIS UC 2026 Laax 🇬🇧 - QJazz - QGIS Server ready for the cloud](https://docs.3liz.org/presentations/2026-10-05-qjazz-qgis-uc.html)
+  | [PDF](docs/pdf/2026-10-05-qjazz-qgis-uc.pdf)
+* [FOSS4G Be 2025 Brussels 🇬🇧 - QJazz - QGIS Server ready for the cloud](https://docs.3liz.org/presentations/2025-09-25-qjazz-foss4g-be.html)
+  | [PDF](docs/pdf/2025-09-25-qjazz-foss4g-be.pdf)
+* QGIS UC 2024 Bratislava - Py-QGIS-Server2 🇬🇧 - QGIS Server ready for the cloud
+  | [PDF](docs/pdf/2024-09-QGIS-UC-Bratislava-Py-Qgis-Server2.pdf)
   | [YouTube](https://www.youtube.com/watch?v=MtjxRIll4zs)
 * [FOSS4G 2022 Firenze 🇬🇧 - QGIS Server into the wild](https://docs.3liz.org/presentations/2022-08_Foss4G_2022_Firenze_QGIS_Server_into_the_wild.html)
   | [PDF](docs/pdf/2022-08_Foss4G_2022_Firenze_QGIS_Server_into_the_wild.pdf)
