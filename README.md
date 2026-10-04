@@ -10,6 +10,8 @@ OTHERWISE, IT WON'T BE PUBLISHED
 
 ## Lizmap
 
+* [QGIS UC 2026 Laax 🇬🇧 - Lizmap Web Client: next steps](https://docs.3liz.org/presentations/2026-10-06-lizmap-next-steps-qgis-uc.html)
+  | [PDF](docs/pdf/2026-10-06-lizmap-next-steps-qgis-uc.pdf)
 * [Rencontre des utilisateurs et futurs utilisateurs de Lizmap de La Réunion 🇫🇷](https://docs.3liz.org/presentations/2025-12-04_La_Réunion_Lizmap_nouveautés_bonnes_pratiques.html)
 * [FOSS4G Belgium 2025 Bruxelles 🇬🇧](https://docs.3liz.org/presentations/2025-09-25-FOSS4G-Belgium-Lizmap.html)
 * [QGIS UC 2025 Norrköping 🇬🇧](https://docs.3liz.org/presentations/2025-06-QGIS-UC-Norrkoping-Lizmap.html)
