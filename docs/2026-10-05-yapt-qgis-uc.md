@@ -589,8 +589,8 @@ Arguments:
 
 # Conclusion
 
-- A set of tools wrote in rust to manage QGIS plugins
-- Nothing new - Yet Another Plugin Tool
+- A set of tools written in **Rust** to manage QGIS plugins
+- Nothing new - **Yet Another Plugin Tool**
 
 <br/>
 
