@@ -81,6 +81,11 @@ To each his own!
 
 We love CRAB!
 
+<!--
+Tous les goûts sont danss la nature !
+Even if QGIS loves Python, we love CRAB and Rust.
+-->
+
 ---
 # Historic situation
 
@@ -100,6 +105,8 @@ We love CRAB!
 
 <!--
 At 3Liz, for our internal needs, for our clients, and for deploying QGIS Server plugins on our Lizmap hosting infrastructure, we used a file server, XML files listing the available plugins, and qgis-plugin-manager.
+
+We also don't want to overload plugins.qgis.org
 -->
 
 ---
@@ -137,6 +144,8 @@ commands:
 
 <!--
 qgis-plugin-manager is a command-line tool for managing installed QGIS plugins. Designed primarily for managing QGIS Server extensions, it also works with QGIS Desktop extensions.
+
+It is witten in Python and available with PIP.
 -->
 
 ---
@@ -159,7 +168,9 @@ Pushed to plugins repository for manual or automatic tests
 ## Install specific version of a plugin even if it is not the last one
 
 <!--
+Our needs have evolved over the years. We need to be able to manage multiple versions of a plugin in development. We also need to install specific versions of a plugin even if it is not the last one.
 
+We have some trouble with the simple XML file and we want to replace it with a more robust solution. We need a QGIS Plugins server.
 -->
 
 ---
@@ -180,7 +191,7 @@ curl "http://localhost:8070/plugins.xml?qgis=3.40"
 
 
 <!--
-Replacing files server with simple XML
+So we build in Rust a QGIS Plugins Server to replace the simple XML file and files server. It is a simple HTTP files server dedicated to QGIS Plugins.
 -->
 
 ---
@@ -199,6 +210,14 @@ Replacing files server with simple XML
 
 - A web site like qgis.plugin.org
 - A security validator (no virus scan, no code analysis)
+
+<!--
+The YAPT Server firstly extracts the metadata from the uploaded plugin archive, to update the plugins catalog without the risk of concurrent access. The catalog is available in XML (QGIS Desktop) and alos in JSON.
+
+The YAPT server is not a web site like qgis.plugin.org. It does not analyze the code of the plugin. It does not scan for viruses. It does not provide a web interface to users.
+
+It is mainly a REST API to upload plugins and to get the catalog of plugins.
+-->
 
 ---
 # QGIS plugins server - The YAPT Server
@@ -231,6 +250,10 @@ curl -X DELETE "https://plugins.example.org/plugins/lizmap-server/?version=%3D2.
 {"removed":[["lizmap-server","2.16.0"]]}
 ```
 
+<!--
+Here are the 3 HTTP methods (words) available with YAPT server.
+-->
+
 ---
 # QGIS plugins server - The YAPT Server
 
@@ -244,6 +267,12 @@ curl -X DELETE "https://plugins.example.org/plugins/lizmap-server/?version=%3D2.
 | `GET`, `HEAD` | `/plugins/<slug>/plugins.xml` | Catalog XML for only one plugin |
 | `GET`, `HEAD` | `/plugins/<slug>/plugins.json` | Catalog JSON for only opne plugin |
 | `GET`, `HEAD` | `/plugins/<slug>/` | Catalog JSON for only one plugin |
+
+
+<!--
+YAPT defeinde these defferents routes to get the plugins catalog.
+It provides a way to get the catalog for all the uploaded plugins or the catalog only for one plugin.
+-->
 
 ---
 # QGIS plugins server - The YAPT Server
@@ -261,6 +290,10 @@ curl -X DELETE "https://plugins.example.org/plugins/lizmap-server/?version=%3D2.
 
 - Boolean values must be specified explicitly: `?pre=true`. `?pre` or `?pre=1` returns `400`.
 - Without `all=true`, the catalog contains no more than two versions per plugin, like **qgis.plugins.org**.
+
+<!--
+The qgis GET parameter is required and works as like the one provided by plugins.qgis.org. The other parameters are optional, helps filtering the catalog, exccept for the all parameter which is designed to work with JSON output to provided all published versions.
+-->
 
 ---
 # QGIS plugins server - The YAPT Server
@@ -283,6 +316,10 @@ POST /plugins/[?pre=true|false]
 - Optional header `X-Upload-Agent`: stored in the field `uploadedBy`
 - Parameter `pre` overides the `experimental` field of `metadata.txt`
 
+<!--
+To upload a new plugin package, you just have to send POST request with multipart/form-data body, that contains the plugin zip file, the signature file and the checksum.
+The experimental field can be overriding at the request level with the pre parameter.
+-->
 ---
 # QGIS plugins server - The YAPT Server
 
@@ -299,6 +336,9 @@ DELETE /plugins/<slug>/?version=<requirement>
 - ⚠️ **Warning**: `version=0.1` is interpreted as `^0.1` and therefore deletes all `0.1.x` versions; use `=0.1.0` for an exact match.
 - The corresponding archives are deleted from disk and the catalog is rewritten. The response lists the versions that were actually deleted.
 
+<!--
+Last request to remove one or more versions of a plugin can be performed with DELETE request.
+-->
 
 ---
 # QGIS plugins server - The YAPT Server
@@ -312,6 +352,11 @@ No database providers to store plugins metadata
 
 ![ssmaller height:250px center](media/yapt-qgis-uc-2026/rust-cuddlyferris-plugin-zip.svg)
 
+<!--
+The YAPT server is not ready yet
+We used it for our needs. We used it for plugins around Lizmap to deploy them on our hosting servcies and plugins for custormers to deliver expriremental for manual tests before deploying them on plugins.qgis.org
+-->
+
 ---
 # YAPT - Now that we're here, why not keep going?
 
@@ -324,6 +369,9 @@ No database providers to store plugins metadata
 
 ![ssmaller height:250px center](media/rust-cuddlyferris.svg)
 
+<!--
+Now, we have our own QGIS Plugins server written in Rust with extra features, why not continuing to develop more tools in Rust to help packaging and managing QGIS plugins ?
+-->
 ---
 # YAPT-pkg
 
@@ -333,12 +381,17 @@ No database providers to store plugins metadata
 
 https://github.com/3liz/yapt-package
 
+<!--
+So we build YAPT package, a command line tool to package QGIS plugins.
+-->
+
 ---
 # YAPT-pkg - The YAPT packager
 
 <!--
 Like **qgis-plugin-ci**: CLI tool for packaging QGIS plugins
 Not like **qgis-plugin-ci**: it is not written in Python but in Rust
+and it does not provide a tool to push and pull from transifex.
 -->
 
 ```bash
@@ -375,6 +428,10 @@ yapt-pkg changelog
 yapt-pkg changelog --version "1.0.0"
 ```
 
+Configuring metadata can be done in `pyproject.toml` not only in `metadata.txt`.
+
+Manage localisation with `qt-transifex` https://github.com/3liz/qt-transifex
+
 ---
 # YAPT-manager
 
@@ -384,6 +441,9 @@ yapt-pkg changelog --version "1.0.0"
 
 https://github.com/3liz/yapt-manager
 
+<!--
+We also build a YAPT manager to take advatage of YAPT Server to manage QGIS plugins : JSON Catalog and parameters.
+-->
 ---
 # YAPT-manager - QGIS Plugin Manager
 
