@@ -115,8 +115,34 @@ We must be able to:
 ![height:200px drop-shadow:10px,10px,4px,dimgray](media/qgisuc_2026_laax_roadnetwork/roundabout_principles.png)
 
 
+# Context
 
-# Data **model**
+Funded by the **Département du Calvados** (French department)
+
+  ![height:200px](media/qgisuc_2026_laax_roadnetwork/logo_cd14.png)
+
+
+**Objectives**
+- They would like to **get rid of a proprietary software** & **use only FOSS4G** tools
+- The data must be stored in a **PostgreSQL database** ![height:35px](media/logo-postgresql.png)
+- **Visualization & Editing** must be done **inside QGIS** ![height:30px](media/logo_qgis.png), with the help of a **plugin**
+- **Calculations** (references, geometry editing) must be made available for **Lizmap Web Client** ![height:35px](media/logo_lizmap.png)
+
+![bg opacity:0.3](media/qgisuc_2026_laax_roadnetwork/departement_calvados.png)
+
+
+# RoadNetwok
+
+## A **QGIS** plugin
+<!-- _class: lead gaia-->
+
+### With the power of **PostgreSQL & PostGIS**
+
+![height:100px drop-shadow:10px,10px,4px,dimgray](media/logo_qgis.png) ![height:100px](media/logo-postgresql.png)
+
+
+
+# Database **model**
 
 ![height:40px](media/logo-postgresql.png) All the logic is stored inside a **PostgreSQL database**
 
@@ -133,35 +159,14 @@ Many **functions** to calculate references, geometries, among:
 
 ![bg contain right:50% drop-shadow:10px,10px,4px,dimgray](media/qgisuc_2026_laax_roadnetwork/database_model.png)
 
-# RoadNetwok
-
-## A **QGIS** plugin
-<!-- _class: lead gaia-->
-
-![height:100px drop-shadow:10px,10px,4px,dimgray](media/logo_qgis.jpg)
-
-# Context
-
-Funded by the **Département du Calvados** (French department)
-
-  ![height:200px](media/qgisuc_2026_laax_roadnetwork/logo_cd14.png)
-
-
-**Objectives**
-- They needed to **get rid of a proprietary software** & **use only FOSS4G** tools
-- The data must be stored in a **PostgreSQL database** ![height:35px](media/logo-postgresql.png)
-- **Visualization & Editing** must be done **inside QGIS** ![height:30px](media/logo_qgis.jpg), with the help of a **plugin**
-- **Calculations** (references, geometry editing) must be made available for **Lizmap Web Client** ![height:35px](media/logo_lizmap.png)
-
-![bg opacity:0.3](media/qgisuc_2026_laax_roadnetwork/departement_calvados.png)
 
 
 # **Administration** tools
 
-Processing algorithms which allow to:
+QGIS **Processing algorithms** which allow to:
 
 - **Create the database structure** with all the tables/functions, etc.
-- **Upgrade the structure** (if upgrading your plugin)
+- **Upgrade the structure** automatically (if upgrading your plugin)
 - **Create a QGIS administration project** with all the layers, styles, labels, actions, etc.
 - **Import data** from template **edges** and **markers** tables
 

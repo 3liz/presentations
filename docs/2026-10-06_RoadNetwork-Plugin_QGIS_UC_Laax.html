@@ -598,7 +598,7 @@ ul li {
     font-size: 1.4em;
   }
 }
-;--marpit-advanced-background-split:50%;" data-marpit-pagination-total="17" data-marpit-advanced-background="background" data-marpit-advanced-background-split="right"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;media/qgisuc_2026_laax_roadnetwork/database_model.png&quot;);background-size:contain;filter:drop-shadow(10px 10px 4px dimgray);"></figure></div></section></foreignObject><foreignObject width="50%" height="720"><section id="7" data-paginate="true" data-class="normal" data-header="![height:30px](media/logo/roadnetwork.svg) RoadNetwork" data-footer="![height:30px](media/events/qgis-uc-2026-laax.webp) QGIS UC 2026 Laax" data-heading-divider="1" data-theme="gaia" data-style="section {
+;" data-marpit-pagination-total="17" data-marpit-advanced-background="background"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;media/qgisuc_2026_laax_roadnetwork/departement_calvados.png&quot;);filter:opacity(0.3);"></figure></div></section></foreignObject><foreignObject width="1280" height="720"><section id="7" data-paginate="true" data-class="normal" data-header="![height:30px](media/logo/roadnetwork.svg) RoadNetwork" data-footer="![height:30px](media/events/qgis-uc-2026-laax.webp) QGIS UC 2026 Laax" data-heading-divider="1" data-theme="gaia" data-style="section {
   font-size: 1.8em;
 }
 h1 {
@@ -642,17 +642,18 @@ ul li {
     font-size: 1.4em;
   }
 }
-;--marpit-advanced-background-split:50%;" data-marpit-pagination-total="17" data-marpit-advanced-background="content" data-marpit-advanced-background-split="right">
+;" data-marpit-pagination-total="17" data-marpit-advanced-background="content">
 <header><img src="media/logo/roadnetwork.svg" alt="" style="height:30px;" /> RoadNetwork</header>
-<h1 id="data-model">Data <strong>model</strong></h1>
-<p><img src="media/logo-postgresql.png" alt="" style="height:40px;" /> All the logic is stored inside a <strong>PostgreSQL database</strong></p>
-<p>A simple set of <strong>tables</strong>: <code>roads</code>, <code>edges</code>, <code>nodes</code>, <code>markers</code>, <code>glossary</code>, <code>managed_objects</code> + <strong>views</strong></p>
-<p>Many <strong>functions</strong> to calculate references, geometries, among:<br />
-<code>get_road_point_from_reference</code><br />
-<code>get_road_substring_from_references</code><br />
-<code>update_table_references_from_geometries</code><br />
-<code>update_table_geometry_from_references</code></p>
-<p><strong>Trigger functions</strong> in charge of maintaining the road network <strong>topology</strong> (automatic node creation, split intersected edges, etc.)</p>
+<h1 id="context">Context</h1>
+<p>Funded by the <strong>Département du Calvados</strong> (French department)</p>
+<p><img src="media/qgisuc_2026_laax_roadnetwork/logo_cd14.png" alt="" style="height:200px;" /></p>
+<p><strong>Objectives</strong></p>
+<ul>
+<li>They would like to <strong>get rid of a proprietary software</strong> &amp; <strong>use only FOSS4G</strong> tools</li>
+<li>The data must be stored in a <strong>PostgreSQL database</strong> <img src="media/logo-postgresql.png" alt="" style="height:35px;" /></li>
+<li><strong>Visualization &amp; Editing</strong> must be done <strong>inside QGIS</strong> <img src="media/logo_qgis.png" alt="" style="height:30px;" />, with the help of a <strong>plugin</strong></li>
+<li><strong>Calculations</strong> (references, geometry editing) must be made available for <strong>Lizmap Web Client</strong> <img src="media/logo_lizmap.png" alt="" style="height:35px;" /></li>
+</ul>
 <footer><img src="media/events/qgis-uc-2026-laax.webp" alt="" style="height:30px;" /> QGIS UC 2026 Laax</footer>
 </section>
 </foreignObject><foreignObject width="1280" height="720" data-marpit-advanced-background="pseudo"><section data-paginate="true" data-class="normal" data-header="![height:30px](media/logo/roadnetwork.svg) RoadNetwork" data-footer="![height:30px](media/events/qgis-uc-2026-laax.webp) QGIS UC 2026 Laax" data-heading-divider="1" data-theme="gaia" data-style="section {
@@ -677,7 +678,7 @@ ul li {
     font-size: 1.4em;
   }
 }
-" lang="fr-FR" class="normal" data-marpit-pagination="7" style="" data-marpit-pagination-total="17" data-marpit-advanced-background="pseudo" data-marpit-advanced-background-split="right"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" data-paginate="true" data-class="lead gaia" data-header="![height:30px](media/logo/roadnetwork.svg) RoadNetwork" data-footer="![height:30px](media/events/qgis-uc-2026-laax.webp) QGIS UC 2026 Laax" data-heading-divider="1" data-theme="gaia" data-style="section {
+" lang="fr-FR" class="normal" data-marpit-pagination="7" style="" data-marpit-pagination-total="17" data-marpit-advanced-background="pseudo"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" data-paginate="true" data-class="lead gaia" data-header="![height:30px](media/logo/roadnetwork.svg) RoadNetwork" data-footer="![height:30px](media/events/qgis-uc-2026-laax.webp) QGIS UC 2026 Laax" data-heading-divider="1" data-theme="gaia" data-style="section {
   font-size: 1.8em;
 }
 h1 {
@@ -726,7 +727,8 @@ ul li {
 <h1 id="roadnetwok">RoadNetwok</h1>
 <h2 id="a-qgis-plugin">A <strong>QGIS</strong> plugin</h2>
 
-<p><img src="media/logo_qgis.jpg" alt="" style="height:100px;filter:drop-shadow(10px 10px 4px dimgray);" /></p>
+<h3 id="with-the-power-of-postgresql--postgis">With the power of <strong>PostgreSQL &amp; PostGIS</strong></h3>
+<p><img src="media/logo_qgis.png" alt="" style="height:100px;filter:drop-shadow(10px 10px 4px dimgray);" /> <img src="media/logo-postgresql.png" alt="" style="height:100px;" /></p>
 <footer><img src="media/events/qgis-uc-2026-laax.webp" alt="" style="height:30px;" /> QGIS UC 2026 Laax</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-paginate="true" data-class="normal" data-header="![height:30px](media/logo/roadnetwork.svg) RoadNetwork" data-footer="![height:30px](media/events/qgis-uc-2026-laax.webp) QGIS UC 2026 Laax" data-heading-divider="1" data-theme="gaia" data-style="section {
@@ -773,7 +775,7 @@ ul li {
     font-size: 1.4em;
   }
 }
-;" data-marpit-pagination-total="17" data-marpit-advanced-background="background"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;media/qgisuc_2026_laax_roadnetwork/departement_calvados.png&quot;);filter:opacity(0.3);"></figure></div></section></foreignObject><foreignObject width="1280" height="720"><section id="9" data-paginate="true" data-class="normal" data-header="![height:30px](media/logo/roadnetwork.svg) RoadNetwork" data-footer="![height:30px](media/events/qgis-uc-2026-laax.webp) QGIS UC 2026 Laax" data-heading-divider="1" data-theme="gaia" data-style="section {
+;--marpit-advanced-background-split:50%;" data-marpit-pagination-total="17" data-marpit-advanced-background="background" data-marpit-advanced-background-split="right"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;media/qgisuc_2026_laax_roadnetwork/database_model.png&quot;);background-size:contain;filter:drop-shadow(10px 10px 4px dimgray);"></figure></div></section></foreignObject><foreignObject width="50%" height="720"><section id="9" data-paginate="true" data-class="normal" data-header="![height:30px](media/logo/roadnetwork.svg) RoadNetwork" data-footer="![height:30px](media/events/qgis-uc-2026-laax.webp) QGIS UC 2026 Laax" data-heading-divider="1" data-theme="gaia" data-style="section {
   font-size: 1.8em;
 }
 h1 {
@@ -817,18 +819,17 @@ ul li {
     font-size: 1.4em;
   }
 }
-;" data-marpit-pagination-total="17" data-marpit-advanced-background="content">
+;--marpit-advanced-background-split:50%;" data-marpit-pagination-total="17" data-marpit-advanced-background="content" data-marpit-advanced-background-split="right">
 <header><img src="media/logo/roadnetwork.svg" alt="" style="height:30px;" /> RoadNetwork</header>
-<h1 id="context">Context</h1>
-<p>Funded by the <strong>Département du Calvados</strong> (French department)</p>
-<p><img src="media/qgisuc_2026_laax_roadnetwork/logo_cd14.png" alt="" style="height:200px;" /></p>
-<p><strong>Objectives</strong></p>
-<ul>
-<li>They needed to <strong>get rid of a proprietary software</strong> &amp; <strong>use only FOSS4G</strong> tools</li>
-<li>The data must be stored in a <strong>PostgreSQL database</strong> <img src="media/logo-postgresql.png" alt="" style="height:35px;" /></li>
-<li><strong>Visualization &amp; Editing</strong> must be done <strong>inside QGIS</strong> <img src="media/logo_qgis.jpg" alt="" style="height:30px;" />, with the help of a <strong>plugin</strong></li>
-<li><strong>Calculations</strong> (references, geometry editing) must be made available for <strong>Lizmap Web Client</strong> <img src="media/logo_lizmap.png" alt="" style="height:35px;" /></li>
-</ul>
+<h1 id="database-model">Database <strong>model</strong></h1>
+<p><img src="media/logo-postgresql.png" alt="" style="height:40px;" /> All the logic is stored inside a <strong>PostgreSQL database</strong></p>
+<p>A simple set of <strong>tables</strong>: <code>roads</code>, <code>edges</code>, <code>nodes</code>, <code>markers</code>, <code>glossary</code>, <code>managed_objects</code> + <strong>views</strong></p>
+<p>Many <strong>functions</strong> to calculate references, geometries, among:<br />
+<code>get_road_point_from_reference</code><br />
+<code>get_road_substring_from_references</code><br />
+<code>update_table_references_from_geometries</code><br />
+<code>update_table_geometry_from_references</code></p>
+<p><strong>Trigger functions</strong> in charge of maintaining the road network <strong>topology</strong> (automatic node creation, split intersected edges, etc.)</p>
 <footer><img src="media/events/qgis-uc-2026-laax.webp" alt="" style="height:30px;" /> QGIS UC 2026 Laax</footer>
 </section>
 </foreignObject><foreignObject width="1280" height="720" data-marpit-advanced-background="pseudo"><section data-paginate="true" data-class="normal" data-header="![height:30px](media/logo/roadnetwork.svg) RoadNetwork" data-footer="![height:30px](media/events/qgis-uc-2026-laax.webp) QGIS UC 2026 Laax" data-heading-divider="1" data-theme="gaia" data-style="section {
@@ -853,7 +854,7 @@ ul li {
     font-size: 1.4em;
   }
 }
-" lang="fr-FR" class="normal" data-marpit-pagination="9" style="" data-marpit-pagination-total="17" data-marpit-advanced-background="pseudo"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-paginate="true" data-class="normal" data-header="![height:30px](media/logo/roadnetwork.svg) RoadNetwork" data-footer="![height:30px](media/events/qgis-uc-2026-laax.webp) QGIS UC 2026 Laax" data-heading-divider="1" data-theme="gaia" data-style="section {
+" lang="fr-FR" class="normal" data-marpit-pagination="9" style="" data-marpit-pagination-total="17" data-marpit-advanced-background="pseudo" data-marpit-advanced-background-split="right"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-paginate="true" data-class="normal" data-header="![height:30px](media/logo/roadnetwork.svg) RoadNetwork" data-footer="![height:30px](media/events/qgis-uc-2026-laax.webp) QGIS UC 2026 Laax" data-heading-divider="1" data-theme="gaia" data-style="section {
   font-size: 1.8em;
 }
 h1 {
@@ -944,10 +945,10 @@ ul li {
 ;--marpit-advanced-background-split:30%;" data-marpit-pagination-total="17" data-marpit-advanced-background="content" data-marpit-advanced-background-split="right">
 <header><img src="media/logo/roadnetwork.svg" alt="" style="height:30px;" /> RoadNetwork</header>
 <h1 id="administration-tools"><strong>Administration</strong> tools</h1>
-<p>Processing algorithms which allow to:</p>
+<p>QGIS <strong>Processing algorithms</strong> which allow to:</p>
 <ul>
 <li><strong>Create the database structure</strong> with all the tables/functions, etc.</li>
-<li><strong>Upgrade the structure</strong> (if upgrading your plugin)</li>
+<li><strong>Upgrade the structure</strong> automatically (if upgrading your plugin)</li>
 <li><strong>Create a QGIS administration project</strong> with all the layers, styles, labels, actions, etc.</li>
 <li><strong>Import data</strong> from template <strong>edges</strong> and <strong>markers</strong> tables</li>
 </ul>
