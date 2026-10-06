@@ -65,10 +65,10 @@ style: |
 ---
 # How to
 
-* Create a project with some layers
-* Use the Lizmap plugin to configure some options specific for the web (extent, scales, tools available etc.)
-* And upload on the Lizmap server
-* You've got a web map based on the QGIS project
+- Create a project with some layers
+- Use the Lizmap plugin to configure some options specific for the web (extent, scales, tools available etc.)
+- And upload on the Lizmap server
+- You've got a web map based on the QGIS project
 
 ![height:350px](media/lizmap/demo.png)
 
